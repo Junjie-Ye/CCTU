@@ -1,0 +1,34 @@
+{
+  "order_constraints": [
+    [
+      "historical_explorer_finder",
+      "exploration_history_analyzer"
+    ],
+    [
+      "exploration_history_analyzer",
+      "mineral_resource_identifier"
+    ],
+    [
+      "mineral_resource_identifier",
+      "industry_material_usage_finder"
+    ],
+    [
+      "industry_material_usage_finder",
+      "economic_theory_influence_finder"
+    ],
+    [
+      "economic_theory_influence_finder",
+      "historical_figure_locator"
+    ],
+    [
+      "historical_figure_locator",
+      "regional_cuisine_identifier"
+    ]
+  ],
+  "refine_constraint": " The answer must be formatted using Markdown syntax, including proper use of elements such as headings, lists, bold/italic text, links, and code blocks to enhance readability and structure. Additionally, the response must conclude with the exact phrase \"Answer: [dessert name]\" where [dessert name] is the specific dessert identified, followed by a period. The answer must be provided within a maximum of 10 interaction rounds with the tools, must require between 7 and 10 tool calls to execute, and must follow the strict tool order sequence: **If the agent intends to invoke the `exploration_history_analyzer`, the `historical_explorer_finder` must be executed beforehand**; **if the agent intends to invoke the `mineral_resource_identifier`, the `exploration_history_analyzer` must be executed beforehand**; **if the agent intends to invoke the `industry_material_usage_finder`, the `mineral_resource_identifier` must be executed beforehand**; **if the agent intends to invoke the `economic_theory_influence_finder`, the `industry_material_usage_finder` must be executed beforehand**; **if the agent intends to invoke the `historical_figure_locator`, the `economic_theory_influence_finder` must be executed beforehand**; **if the agent intends to invoke the `regional_cuisine_identifier`, the `historical_figure_locator` must be executed beforehand**. Each tool must complete successfully before the next is invoked, with no parallel execution allowed between these tools.",
+  "constraint": [
+    "Tool",
+    "Tool Order",
+    "The following tools must be called in this exact sequence: [historical_explorer_finder, exploration_history_analyzer, mineral_resource_identifier, industry_material_usage_finder, economic_theory_influence_finder, historical_figure_locator, regional_cuisine_identifier]. Each tool must complete successfully before the next is invoked, with no parallel execution allowed between these tools."
+  ]
+}

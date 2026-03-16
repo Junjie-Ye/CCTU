@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " The answer must be concise and contain only the numeric result, with a length between 3 and 10 characters. If the agent intends to invoke the `residence_locator` tool, the `historical_filmmaker_search` must strictly be executed beforehand. Additionally, each of the following tools may only be used at most once: historical_filmmaker_search, residence_locator, cultural_geography_mapper, historical_monument_counter, landmark_info_retriever, and advanced_calculator.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

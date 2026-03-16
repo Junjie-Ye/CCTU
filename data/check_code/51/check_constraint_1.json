@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 0,
+  "max_responseLength": 50,
+  "unit": "words",
+  "refine_constraint": " You must ensure that each tool can be used at most once during the solution process, and the total number of interaction turns must not exceed 8. The final answer must be concise, not exceeding 50 words.",
+  "constraint": [
+    "Response",
+    "Length",
+    "(Response, Length, At most 50 words)"
+  ]
+}

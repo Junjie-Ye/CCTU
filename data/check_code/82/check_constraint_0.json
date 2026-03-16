@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 0,
+  "max_responseLength": 15,
+  "unit": "words",
+  "refine_constraint": " The answer must be concise, contain at most 15 words, start with the phrase \"The main export product is\", and be formatted using Markdown syntax with proper use of bold/italic text to highlight key information.",
+  "constraint": [
+    "Response",
+    "Length",
+    "At most 15 words"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "min_round": 8,
+  "max_round": 12,
+  "refine_constraint": " The solution must use a total of 8 to 12 interaction rounds (inclusive) between tool invocations and responses, ensuring efficiency while allowing for necessary retries.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "(Main Category, Round, Range (Requires the total number of interaction turns to fall within a specified minimum and maximum value (inclusive)), 8 to 12)"
+  ]
+}

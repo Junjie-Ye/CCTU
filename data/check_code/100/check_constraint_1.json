@@ -1,0 +1,10 @@
+{
+  "min_round": 2,
+  "max_round": 3,
+  "refine_constraint": " The solution must use parallel execution: in at least one interaction turn, the agent must invoke between 1 and 2 unique tool types simultaneously (e.g., calling the same tool twice counts as one unique type, while calling two different tools counts as two). The agent must never exceed two unique tool types in any single turn. The solution must be completed within a total of 2 to 3 interaction turns. Additionally, the final answer must conclude with the identifier \"[END OF ANSWER]\" to clearly indicate the end of the response and end with a period (.) to ensure proper sentence closure. The agent may invoke the `unified_specification_retriever` tool at most 2 times in total to prevent over-reliance on a single tool for data retrieval. No other tool may be used more than once in this task.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "The total number of interaction turns must fall within a range of 2 to 3 (inclusive)"
+  ]
+}

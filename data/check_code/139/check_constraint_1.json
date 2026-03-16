@@ -1,0 +1,11 @@
+{
+  "min_parallelCallTypes": 0,
+  "max_parallelCallTypes": 2,
+  "unit": "type",
+  "refine_constraint": " The answer must be between 100 and 150 characters long to ensure clarity and conciseness. The agent must not invoke more than two unique tool types simultaneously in any single interaction turn, and the total number of tool calls across all interaction turns must be between 2 and 4 inclusive.",
+  "constraint": [
+    "Interact",
+    "Parallel Calls",
+    "At most 2 (The agent may invoke no more than two unique tool types simultaneously in any single interaction turn.)"
+  ]
+}

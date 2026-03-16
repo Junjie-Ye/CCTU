@@ -1,0 +1,16 @@
+{
+  "max_calls_per_tool": {
+    "historical_event_retriever": 2,
+    "species_info_retriever": 2,
+    "aviation_incident_info_retriever": 2,
+    "factual_information_retriever": 2,
+    "photo_library_and_orientation_analyzer": 2,
+    "flight_distance_calculator": 2
+  },
+  "refine_constraint": " Your response must include the phrases \"• Human: [X]\" and \"• Shark: [Y]\" as delimiters before stating the difference. The solution must involve at least two separate tool calls to retrieve information about human and shark teeth. You must not call any individual tool more than twice during this process. You must complete this task within at most 3 interaction turns, including all tool calls and final response.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "Each tool can be called at most 2 times during execution"
+  ]
+}

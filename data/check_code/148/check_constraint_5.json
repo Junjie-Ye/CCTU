@@ -1,0 +1,11 @@
+{
+  "min_parallelCallTypes": 1,
+  "max_parallelCallTypes": "inf",
+  "unit": "type",
+  "refine_constraint": " If the agent intends to use the `historical_event_date_tool`, it must be invoked in a single action step to retrieve the necessary dates. At least one interaction turn must involve the agent invoking at least one unique tool type simultaneously. All information must be obtained through tool calls, and the agent must analyze and correct any errors until it arrives at a final answer. The total number of interaction turns must fall within a range of 2 to 5 (inclusive). The final answer must be presented in a tabular format with at least two rows and two columns to clearly show the event names, their respective dates, and the calculated number of days between them. Additionally, the response must conclude with the phrase \"Days between events: [number]\" and must be between 150 and 250 words in total length to ensure conciseness and completeness.",
+  "constraint": [
+    "Interact",
+    "Parallel Calls",
+    "At least 1"
+  ]
+}

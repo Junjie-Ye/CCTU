@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 1,
+  "max_callTimes": 2,
+  "refine_constraint": " The solution must involve a total number of tool calls between 1 and 2, inclusive. The response must be structured as a valid JSON object with a \"date\" key containing the answer in [YYYY-MM-DD] format. Additionally, the tool military_event_search can be used at most once during the solution process.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "Range (1, 2)"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 30,
+  "max_responseLength": 50,
+  "unit": "words",
+  "refine_constraint": " Your response must be between 30 and 50 words in length to ensure clarity and conciseness, must provide the necessary data points and classification to determine normality, must be formatted using Markdown syntax with proper use of elements such as headings, bold/italic text, and lists to enhance readability and structure, and must utilize the 'bmi_calculator' tool no more than 2 times in total.",
+  "constraint": [
+    "Response",
+    "Length",
+    "The response must be between 30 and 50 words in length to ensure clarity and conciseness."
+  ]
+}

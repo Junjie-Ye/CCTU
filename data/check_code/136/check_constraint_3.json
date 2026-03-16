@@ -1,0 +1,14 @@
+{
+  "parallel_groups": [
+    [
+      "historical_event_tool",
+      "historical_event_tool"
+    ]
+  ],
+  "refine_constraint": " The solution must involve at least 2 interaction steps and at least one interaction turn where the agent invokes at least two tool calls simultaneously. The agent may use no more than 5 total tool calls across all interaction steps. The 'historical_event_tool' can be called at most 2 times and must called twice simultaneously in the same step. The response must be at most 100 characters and must end with a period. Your response must conclude with the phrase \"Final Answer: [X days]\" where [X] is the calculated number of days.",
+  "constraint": [
+    "Tool",
+    "Tool Parallel",
+    "Must invoke 'historical_event_tool' twice in the same step to obtain the dates for the two events"
+  ]
+}

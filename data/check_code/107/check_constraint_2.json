@@ -1,0 +1,11 @@
+{
+  "min_parallelCallTypes": 0,
+  "max_parallelCallTypes": 1,
+  "unit": "type",
+  "refine_constraint": " The solution must consist of exactly two distinct tool invocations, with each interaction turn restricted to a single unique tool type, and the entire process must be completed within one or two interaction turns. The final response must be between 100 and 150 characters in length (including spaces and numbers).",
+  "constraint": [
+    "Interact",
+    "Parallel Calls",
+    "At most 1 unique tool type per interaction turn"
+  ]
+}

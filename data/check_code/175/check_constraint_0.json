@@ -1,0 +1,11 @@
+{
+  "min_parallelCallTypes": 2,
+  "max_parallelCallTypes": "inf",
+  "unit": "type",
+  "refine_constraint": " The solution must include at least one interaction turn where at least two unique tools are invoked simultaneously.",
+  "constraint": [
+    "Interact",
+    "Parallel Calls",
+    "(Interact, Parallel Calls, At least (Mandates that there must be at least one interaction turn during the entire task where the agent invokes at least two unique tool types simultaneously.))"
+  ]
+}

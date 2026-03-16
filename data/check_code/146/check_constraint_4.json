@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 2,
+  "max_callTimes": 5,
+  "refine_constraint": " If the agent intends to use the `historical_composer_info_retriever` tool, it must retrieve the symphony counts for the target composers. The solution must be completed within 2 to 6 total interaction turns, allowing for potential error correction while ensuring efficiency. The agent must make between 2 to 5 total tool calls across all interaction steps to balance thoroughness and efficiency. The final answer must be concise, with a maximum length of 150 characters. Additionally, the entire response must be formatted using Markdown syntax, including proper use of headings, bold/italic text, and code blocks to enhance readability and structure.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "(Main Category, Interact, Call Times, Range (The total number of tool calls the agent must execute must be between 2 and 5, inclusive))"
+  ]
+}

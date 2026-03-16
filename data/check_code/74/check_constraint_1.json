@@ -1,0 +1,23 @@
+{
+  "max_calls_per_tool": {
+    "financial_city_locator": 2,
+    "event_info_retriever": 2,
+    "local_cuisine_identifier": 2,
+    "architect_info_finder": 2,
+    "artist_influence_analyzer": 2,
+    "museum_locator": 2,
+    "historical_relationship_finder": 2,
+    "landmark_material_info": 2,
+    "artwork_locator": 2,
+    "sports_statistics_retriever": 2,
+    "historical_figure_locator": 2,
+    "artwork_catalog": 2,
+    "location_identifier": 2
+  },
+  "refine_constraint": " Your solution must use between 7 and 11 tool calls to ensure sufficient information retrieval while preventing excessive execution, each tool can be called at most 2 times during the task, and the response must conclude with the identifier \"END OF ANSWER\"",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "\"Each tool can be called at most 2 times during the task\""
+  ]
+}

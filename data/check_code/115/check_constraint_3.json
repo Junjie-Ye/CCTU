@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " The historical_event_tool can be invoked at most twice during the entire task. Your final response must be concise, containing at most 200 words.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 0,
+  "max_responseLength": 20,
+  "unit": "words",
+  "refine_constraint": " You must use at most one call to the anatomy_facts_provider tool and at most one call to the anatomical_info_provider tool. Your response must be concise, contain at most 20 words, end with a period, and be formatted as a valid JSON object with a key \"answer\" containing the final numerical result.",
+  "constraint": [
+    "Response",
+    "Length",
+    "(Response, Length, \"At most 20 words\")"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "parallel_groups": [
+    [
+      "academic_paper_finder",
+      "innovation_country_identifier"
+    ]
+  ],
+  "refine_constraint": " If the agent invokes multiple tools to obtain the required data for comparison, the agent is permitted to invoke `academic_paper_finder` and `innovation_country_identifier` concurrently. Additionally, each of the tools can be used at most once per task to ensure efficient resource allocation. Furthermore, the agent must perform at least 6 interaction rounds to solve the problem. The 'biodiversity_database' tool must be called before the 'satellite_info_retriever' tool in the sequence of actions. The response must include the phrase \"Species Count: \" followed by the number of species, and the phrase \"Satellite Weight (kg): \" followed by the weight of the satellite, separated by a line containing \"---- Comparison ----\" before the final comparison statement. The final comparison statement must end with a period to ensure proper sentence closure.",
+  "constraint": [
+    "Tool",
+    "Tool Parallel",
+    "(Tool, Tool Parallel, \"Simultaneous: The agent is permitted to invoke `academic_paper_finder` and `innovation_country_identifier` concurrently.\")"
+  ]
+}

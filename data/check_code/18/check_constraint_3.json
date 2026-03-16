@@ -1,0 +1,10 @@
+{
+  "min_round": 1,
+  "max_round": 3,
+  "refine_constraint": " You must retrieve all information by calling the provided tools, not through internal knowledge. If a tool call fails, correct the parameters and retry until success. You may invoke multiple tools in parallel but must strictly limit the use of the historical_event_finder tool to at most 1 call during the task. The total number of interaction turns must fall within the range of 1 to 3 inclusive. The response must end with a period and include a semicolon after the date to separate it from the context.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "Range (1-3)"
+  ]
+}

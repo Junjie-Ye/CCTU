@@ -1,0 +1,10 @@
+{
+  "min_round": 2,
+  "max_round": 3,
+  "refine_constraint": " The agent must solve this by calling the provided tools, present the final answer in a tabular format with columns for \"Species\" and \"Number of Ventricles\" and a row for each species, complete the task in a total number of interaction turns that falls within a range of 2 to 3 (inclusive), and ensure the final response is between 50 and 100 words in length to balance conciseness and detail. All information must be obtained through tool calls, and the agent must analyze and correct any failed tool calls until a successful solution is achieved.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "\"The total number of interaction turns must fall within a range of 2 to 3 (inclusive).\""
+  ]
+}

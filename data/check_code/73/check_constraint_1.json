@@ -1,0 +1,16 @@
+{
+  "max_calls_per_tool": {
+    "conservation_award_winner_finder": 1,
+    "nature_reserve_association_finder": 1,
+    "species_locator": 1,
+    "zoological_research_finder": 1,
+    "individual_location_finder": 1,
+    "festival_finder": 1
+  },
+  "refine_constraint": " The answer must end with a period to ensure proper sentence closure. Additionally, each of the following tools used in the correct trajectory must be called at most once: conservation_award_winner_finder, nature_reserve_association_finder, species_locator, zoological_research_finder, individual_location_finder, festival_finder. The final response must be formatted using Markdown, with the festival name presented in bold text. The solution must be completed within 6 to 8 interaction turns to maintain efficiency while allowing for necessary adjustments. The response must contain between 10 and 50 characters (inclusive) to ensure conciseness and avoid unnecessary elaboration.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "The conservation_award_winner_finder, nature_reserve_association_finder, species_locator, zoological_research_finder, individual_location_finder, and festival_finder tools can each be called at most once."
+  ]
+}

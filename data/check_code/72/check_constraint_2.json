@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 500,
+  "max_responseLength": "inf",
+  "unit": "characters",
+  "refine_constraint": " The answer must be formatted using Markdown syntax, ensuring the use of headings, bold text, and bullet points to clearly outline each step in the solution process. Additionally, the agent's response must start with the identifier \"### Final Answer:\" to clearly denote the final answer section. The response must be at least 500 characters in length to ensure detailed explanations and structured formatting.",
+  "constraint": [
+    "Response",
+    "Length",
+    "At least 500 characters to ensure the response includes detailed explanations and a structured format with headings, bullet points, and bold text for each step in the solution process."
+  ]
+}

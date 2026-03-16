@@ -1,0 +1,16 @@
+{
+  "max_calls_per_tool": {
+    "political_leadership_tracker": 2,
+    "election_result_fetcher": 2,
+    "political_event_retriever": 2,
+    "maritime_incident_finder": 2,
+    "historical_figure_identifier": 2,
+    "historical_event_search": 2
+  },
+  "refine_constraint": " Your response must be formatted entirely using Markdown syntax, including appropriate use of bold, headings, or other elements to clearly present the answer. Additionally, ensure the response ends with a period to maintain proper sentence closure. The response must begin with the phrase \"**The answer is: **\" followed by the answer in bold formatting to ensure a clear and recognizable opening. You may use each tool type at most 2 times during your problem-solving process to ensure efficient use of available functions. Importantly, you must complete this task with a total of no more than 3 tool calls across all interaction turns to demonstrate efficient problem-solving.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(\"Tool\", \"Max Calls Per Tool\", \"Each unique tool can be invoked at most 2 times (Limits the number of times the agent may call any individual tool type to prevent excessive or redundant usage, ensuring efficient problem-solving while allowing for reasonable retries.)\")"
+  ]
+}

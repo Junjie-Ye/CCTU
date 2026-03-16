@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 10,
+  "max_responseLength": 30,
+  "unit": "words",
+  "refine_constraint": " The response must be between 10 and 30 words in length to ensure conciseness and clarity. The agent may call the 'event_casualty_tracker' tool at most 2 times during the task.",
+  "constraint": [
+    "Response",
+    "Length",
+    "The response must be between 10 and 30 words in length."
+  ]
+}

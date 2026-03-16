@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 10,
+  "refine_constraint": " If the agent executes an interaction turn, it must include the simultaneous invocation of at least two unique tool types, you must complete the task in at most 10 interaction turns, you can make at most 10 tool calls in total across all interaction turns, you can call the 'historical_figure_monument_locator', 'landmark_locator', 'geographical_feature_identifier', 'enhanced_nearby_waterfall_locator', 'population_data_retriever', and 'landmark_info_retriever' tools at most once each, your final answer must end with either 'Answer: (a) the population is larger' or 'Answer: (b) the height is larger', and your final response must be presented in a tabular format with clear headers and organized data for comparison.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 10"
+  ]
+}

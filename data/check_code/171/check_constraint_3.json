@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 10,
+  "refine_constraint": " Your answer must be a valid JSON object with the following structure: {\"result\": \"<comparison_result>\", \"museum_capacity\": <number>, \"city_population\": <number>}. The comparison_result must be either \"Yes\" or \"No\", both numerical values must be integers representing the exact numbers retrieved from the tools, the response must conclude with the exact string 'END' to indicate completion, the population_data_retriever tool may be used no more than 3 times during the solution process, and the solution must be completed within 10 interaction turns.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "(Interact, Round, \"At most 10 interaction turns must be used to arrive at the final answer.\")"
+  ]
+}

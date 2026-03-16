@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "historical_event_finder": 1
+  },
+  "refine_constraint": " You must retrieve all information by calling the provided tools, not through internal knowledge. If a tool call fails, correct the parameters and retry until success. You may invoke multiple tools in parallel but must strictly limit the use of the historical_event_finder tool to at most 1 call during the task. The total number of interaction turns must fall within the range of 1 to 3 inclusive. The response must end with a period and include a semicolon after the date to separate it from the context.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Tool, Max Calls Per Tool, \"The historical_event_finder tool must be called at most 1 time during the task.\")"
+  ]
+}

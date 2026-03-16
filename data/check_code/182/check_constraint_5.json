@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " The final answer must be formatted in Markdown syntax, including the use of headings, bold/italic text, and clear numerical comparisons to enhance readability and clarity. Additionally, the response must conclude with the exact phrase \"**Answer:** (a) is more than (b)\" or \"**Answer:** (b) is more than (a)\", depending on the result. The response must not include any periods. If the agent uses the `cultural_heritage_locator` tool, the `mountain_peak_identifier` tool must be called afterwards. In at least one interaction turn, the agent must invoke at least 2 unique tool types in parallel.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

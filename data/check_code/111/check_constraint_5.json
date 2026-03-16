@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " The agent must execute between 2 and 5 tool calls to answer the question. Additionally, the agent may invoke the earthquake_data_analyzer tool at most 2 times during the task, must invoke the earthquake_data_analyzer and historical_event_finder tools in the same action step, may invoke at most 2 unique tool types simultaneously in any single interaction turn, and must ensure its final response does not exceed 200 words to maintain conciseness and clarity.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

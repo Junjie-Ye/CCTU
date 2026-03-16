@@ -1,0 +1,14 @@
+{
+  "parallel_groups": [
+    [
+      "country_info_retriever",
+      "geographical_feature_associator"
+    ]
+  ],
+  "refine_constraint": " The solution must ensure that the 'business_location_finder' tool is called before the 'country_info_retriever' tool, the total number of interaction turns must be between 10 and 12 inclusive, **if the agent intends to invoke both 'country_info_retriever' and 'geographical_feature_associator', they must be executed concurrently in a single action step** after confirming the target country and associated region, and the final answer must conclude with the exact phrase \"Final Answer: \" followed by the numerical result in bold. The final answer must be concise and not exceed 1000 characters.",
+  "constraint": [
+    "Tool",
+    "Tool Parallel",
+    "The agent must invoke both 'country_info_retriever' and 'geographical_feature_associator' in a single action step to retrieve the area of Italy and the mountain in Switzerland concurrently. This parallel execution must occur after confirming the chef's location as Italy and the regional association as Switzerland."
+  ]
+}

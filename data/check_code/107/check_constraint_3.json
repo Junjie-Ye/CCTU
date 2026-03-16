@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 100,
+  "max_responseLength": 150,
+  "unit": "characters",
+  "refine_constraint": " The solution must consist of exactly two distinct tool invocations, with each interaction turn restricted to a single unique tool type, and the entire process must be completed within one or two interaction turns. The final response must be between 100 and 150 characters in length (including spaces and numbers).",
+  "constraint": [
+    "Response",
+    "Length",
+    "Length Range (The agent's final response must be between 100 and 150 characters in length, including spaces and numbers)"
+  ]
+}

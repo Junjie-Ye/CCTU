@@ -1,0 +1,10 @@
+{
+  "min_round": 2,
+  "max_round": 5,
+  "refine_constraint": " You must use the available tools to find the answer, and your solution must involve between 2 and 5 interaction turns, inclusive. Additionally, you are limited to at most 2 calls per unique tool type for this task. Your final answer must use the delimiter \"###\" to clearly separate the two results in the response.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "\"The total number of interaction turns must be between 2 and 5, inclusive.\""
+  ]
+}

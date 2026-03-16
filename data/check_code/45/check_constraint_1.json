@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 2,
+  "refine_constraint": " You must ensure that the 'historical_event_finder' tool is used no more than once during your solution process, and you must complete your response within at most 2 interaction turns (including both tool calls and final answers).",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 2 interaction turns"
+  ]
+}

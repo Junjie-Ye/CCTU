@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "species_record_locator": 2
+  },
+  "refine_constraint": " You must use the provided tools to derive your answer, and you must not exceed 10 interaction turns in total. If the agent intends to retrieve both the seating capacity and ocean species data, the venue_information_retriever and species_record_locator tools must be invoked in the same action step. The city_feature_identifier tool must be called first in the process. The species_record_locator tool must be called at most 2 times. Your final answer must be presented in a tabular format, clearly listing each component of the calculation (theater seating capacity, number of ocean species, and their sum) in separate rows and columns to enhance clarity and accessibility.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "Tool: species_record_locator must be called at most 2 times"
+  ]
+}

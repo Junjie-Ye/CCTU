@@ -1,0 +1,18 @@
+{
+  "max_calls_per_tool": {
+    "population_data_retriever": 1,
+    "movie_gross_analyzer": 1,
+    "educational_program_finder": 1,
+    "historical_agreement_finder": 1,
+    "supplier_relationship_finder": 1,
+    "festival_locator": 1,
+    "clay_source_identifier": 1,
+    "building_material_analyzer": 1
+  },
+  "refine_constraint": " Your solution must involve between 2 to 4 total tool calls to achieve the result, must not exceed 3 total interaction turns, and must ensure each tool is called at most once.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Tool, Max Calls Per Tool, Each tool can be called at most once)"
+  ]
+}

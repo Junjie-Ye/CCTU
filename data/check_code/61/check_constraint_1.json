@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 8,
+  "refine_constraint": " The answer must conclude with the phrase \"[End of Answer]\", be determined within at most 8 interaction turns with the tools. Usage of the `seafood_origin_locator` is conditional upon the prior execution of the `port_locator` tool. Use the seafood_origin_locator tool at most 1 time, and present the final answer using Markdown syntax with at least one bolded element highlighting the local spice.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "(Interact, Round, At most 8 interaction turns)"
+  ]
+}

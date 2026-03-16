@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "chemical_release_tracker": 1
+  },
+  "refine_constraint": " Your response must be derived through a maximum of 3 total interaction turns with the provided tools, must be presented in a tabular format with columns for \"Chemical Name\" and \"Description\" (where the \"Description\" column includes their hazardous properties or effects), must end with a period as the final punctuation mark, and the `chemical_release_tracker` tool must be used at most once during the process.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "At most 1 for the `chemical_release_tracker` tool"
+  ]
+}

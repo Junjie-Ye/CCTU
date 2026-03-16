@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 0,
+  "max_responseLength": 100,
+  "unit": "words",
+  "refine_constraint": " You must determine this by calling the available tools, ensuring that the total number of tool calls is between 5 and 10 and that the total number of interaction turns is between 5 and 12. Your response must conclude with the exact phrase \"The local fish in the area is: [Species]\" to ensure a standardized and recognizable ending, and must not exceed 100 words in total.",
+  "constraint": [
+    "Response",
+    "Length",
+    "(Response, Length, At most 100 words)"
+  ]
+}

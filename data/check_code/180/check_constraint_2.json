@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 10,
+  "refine_constraint": "Rank the following from smallest to largest: (a) the annual number of visitors to the museum in the city where the inventor of the telephone was born, (b) the amount of rainfall in millimeters over a year in the region famous for its vineyards, and (c) the number of species inhabiting the coral reef known for its biodiversity. The answer must end with a period. The AI Agent must use the provided tools. If the agent intends to invoke tools, at least two must be selected in a single action from (museum_locator, climate_data_retriever, and biodiversity_database). The task must be completed within a maximum of 10 interaction turns. All information must be obtained via tool calls, and the Agent must self-correct if any tool call fails.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 10 interaction turns are allowed to solve the problem"
+  ]
+}

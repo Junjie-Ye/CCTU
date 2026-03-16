@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 8,
+  "refine_constraint": " The answer must be formatted in Markdown syntax with proper use of headings, lists, bold/italic text, and code blocks to enhance readability. The answer must end with a period to ensure proper sentence closure. The agent may take no more than 8 interaction turns to arrive at the final answer.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "(Interact, Round, \"At most (The total number of interaction turns the agent may take to answer the question must not exceed 8.)\")"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 2,
+  "refine_constraint": " You must use the available tools to answer the question. The AI Agent must invoke tools to retrieve the necessary information and must not use internal knowledge. The Agent is allowed to make up to 4 tool calls in total and must make at least 2 tool calls to complete the task. Additionally, the Agent must solve the task within a maximum of 2 interaction rounds. The AI Agent is permitted to invoke the 'historical_event_tool' at most 2 times in the course of solving the task. The final answer must be between 100 and 200 characters in length to ensure sufficient detail while maintaining conciseness.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 2"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "order_constraints": [
+    [
+      "desert_museum_locator",
+      "artwork_artist_locator"
+    ],
+    [
+      "artwork_artist_locator",
+      "biographical_info_retriever"
+    ],
+    [
+      "biographical_info_retriever",
+      "population_data_retriever"
+    ],
+    [
+      "population_data_retriever",
+      "explorer_achievement_finder"
+    ],
+    [
+      "explorer_achievement_finder",
+      "age_calculator"
+    ],
+    [
+      "age_calculator",
+      "advanced_calculator"
+    ]
+  ],
+  "refine_constraint": " The agent must invoke between 1 and 2 unique tools simultaneously in at least one interaction turn during the solution process, while ensuring that no turn exceeds 2 simultaneous tool invocations. The agent is allowed a maximum of 10 total tool calls in the solution process. If the agent intends to invoke `artwork_artist_locator`, `desert_museum_locator` must be executed beforehand. If the agent intends to invoke `biographical_info_retriever`, `artwork_artist_locator` must be executed beforehand. If the agent intends to invoke `population_data_retriever`, `biographical_info_retriever` must be executed beforehand. If the agent intends to invoke `explorer_achievement_finder`, `population_data_retriever` must be executed beforehand. If the agent intends to invoke `age_calculator`, `explorer_achievement_finder` must be executed beforehand. If the agent intends to invoke `advanced_calculator`, `age_calculator` must be executed beforehand. The final response must end with a period to ensure proper sentence closure.",
+  "constraint": [
+    "Tool",
+    "Tool Order",
+    "(Main Category, Tool, Subcategory, Tool Order, \"desert_museum_locator must be called before artwork_artist_locator, which must be called before biographical_info_retriever, which must be called before population_data_retriever, which must be called before explorer_achievement_finder, which must be called before age_calculator, which must be called before advanced_calculator\")"
+  ]
+}

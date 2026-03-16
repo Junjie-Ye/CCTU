@@ -1,0 +1,18 @@
+{
+  "order_constraints": [
+    [
+      "historian_finder",
+      "historical_affiliation_finder"
+    ],
+    [
+      "historical_affiliation_finder",
+      "astronomical_historian"
+    ]
+  ],
+  "refine_constraint": " Your answer must be at least 50 words and clearly explain the numerical comparison between the artifact’s price and the theater’s capacity. Additionally, if the agent intends to use the `historical_affiliation_finder` tool, it is strictly required to ensure that `historian_finder` has been invoked beforehand. The `astronomical_historian` tool can only be legitimately invoked if the `historical_affiliation_finder` tool has already been executed within the trajectory. The final answer must be structured as a valid JSON object with keys 'comparison' and 'result', where 'comparison' contains the numerical values and 'result' states whether the price exceeds the capacity.",
+  "constraint": [
+    "Tool",
+    "Tool Order",
+    "The agent must invoke 'historical_affiliation_finder' after 'historian_finder' and 'astronomical_historian' after 'historical_affiliation_finder' in a strict sequence, regardless of data dependencies between the tools."
+  ]
+}

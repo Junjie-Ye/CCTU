@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 0,
+  "max_callTimes": "inf",
+  "refine_constraint": " You must solve this using the provided tools and cannot rely on internal knowledge. You must not call the 'product_price_checker' function more than 2 times during the process. The total number of interaction turns must fall within a range of 6 to 8 (inclusive). The response must be presented in a tabular format with two columns: \"Product\" and \"Price (USD)\", and the combined price must be clearly indicated in the table. The response must end with a period. If the agent chooses to invoke the 'car_price_analyzer' and 'product_price_comparator' functions, these must be executed concurrently.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "(Interact, Call Times, At most 8)"
+  ]
+}

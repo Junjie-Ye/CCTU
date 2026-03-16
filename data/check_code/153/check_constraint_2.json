@@ -1,0 +1,16 @@
+{
+  "max_calls_per_tool": {
+    "city_feature_identifier": 2,
+    "city_reputation_identifier": 2,
+    "artist_location_finder": 2,
+    "artwork_valuation_tool": 2,
+    "company_locator": 2,
+    "financial_data_retriever": 2
+  },
+  "refine_constraint": " Your answer must be derived by calling between 6 to 10 tool calls across all interaction turns to ensure comprehensive resolution of both city/toolchain identification and value comparison. The city_feature_identifier and city_reputation_identifier tools must be invoked in a single action step. The agent may invoke each of the following tools (city_feature_identifier, city_reputation_identifier, artist_location_finder, artwork_valuation_tool, company_locator, financial_data_retriever) at most 2 times during the solution process.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Tool, Max Calls Per Tool, The agent may invoke the financial_data_retriever tool at most 2 times.)"
+  ]
+}

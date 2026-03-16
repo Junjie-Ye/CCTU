@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 8,
+  "refine_constraint": " If the agent chooses to execute the tools, they must be called in the following specific order: urban_feature_locator, commercial_district_locator, business_locator, service_relationship_finder, mall_management_locator, footfall_analyzer. The solution must be completed in at most 8 interaction rounds. The response must end with a period.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 8"
+  ]
+}

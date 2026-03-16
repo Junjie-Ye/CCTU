@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 0,
+  "max_callTimes": 8,
+  "refine_constraint": " You must use at most 8 tool calls to determine the answer, ensuring all information is obtained through the provided functions without relying on internal knowledge. Additionally, your final response must be formatted using Markdown syntax with proper headings, lists, bold/italic text, and code blocks to clearly present your findings and conclusion. Ensure your final sentence ends with a period to maintain proper sentence closure.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "At most 8 tool calls"
+  ]
+}

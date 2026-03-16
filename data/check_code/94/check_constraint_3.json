@@ -1,0 +1,10 @@
+{
+  "min_round": 5,
+  "max_round": 8,
+  "refine_constraint": " The response must be at most 200 words to ensure conciseness while maintaining sufficient detail, must begin with the phrase \"The annual production in tons is: \" to ensure a consistent and recognizable opening, the agent must execute a total number of tool calls within the range of 5 to 7 to balance efficiency and thoroughness in information gathering, and must complete the task within a total of 5 to 8 interaction turns to balance efficiency and thoroughness in the solution process.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "(Interact, Round, \"The agent must complete the task within a total of 5 to 8 interaction turns to balance efficiency and thoroughness in the solution process.\")"
+  ]
+}

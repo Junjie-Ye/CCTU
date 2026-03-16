@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " The AI Agent must perform at least one interaction turn where it invokes at least one unique tool type simultaneously. If the agent intends to invoke the `historical_event_info_retriever` tool, it must be executed twice within a single action step. The agent must not call the `historical_event_info_retriever` tool more than twice in total during the task, and the total number of tool calls across all interaction turns must not exceed 3. The final answer must be presented in a tabular format with at least two columns: one for event names and one for casualty numbers, and a third column explicitly showing the calculated difference between the two values.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " You must obtain the answer by making between 6 and 8 total tool calls, inclusive. Ensure all information is derived from tool calls and not internal knowledge. If a tool call fails, analyze the error and retry until success. The response must end with a period and be formatted using Markdown syntax with proper use of elements like headings, lists, bold/italic text, links, and code blocks to enhance readability and structure.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

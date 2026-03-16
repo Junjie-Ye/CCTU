@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "seafood_origin_locator": 1
+  },
+  "refine_constraint": " The answer must conclude with the phrase \"[End of Answer]\", be determined within at most 8 interaction turns with the tools. Usage of the `seafood_origin_locator` is conditional upon the prior execution of the `port_locator` tool. Use the seafood_origin_locator tool at most 1 time, and present the final answer using Markdown syntax with at least one bolded element highlighting the local spice.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Main Category, Max Calls Per Tool, The tool seafood_origin_locator can be invoked at most 1 time during the solution process)"
+  ]
+}

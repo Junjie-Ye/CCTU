@@ -1,0 +1,18 @@
+{
+  "max_calls_per_tool": {
+    "literary_author_identifier": 1,
+    "historical_contemporary_finder": 1,
+    "literary_work_identifier": 1,
+    "literary_character_finder": 1,
+    "asteroid_name_matcher": 1,
+    "astronomical_discovery_finder": 1,
+    "biographical_lookup": 1,
+    "national_symbol_finder": 1
+  },
+  "refine_constraint": " You must use the provided tools to find the answer, and you must complete the task with at most 10 tool calls. The agent is not allowed to call the 'literary_author_identifier' tool more than 1 time. The agent is not allowed to call the 'historical_contemporary_finder' tool more than 1 time. The agent is not allowed to call the 'literary_work_identifier' tool more than 1 time. The agent is not allowed to call the 'literary_character_finder' tool more than 1 time. The agent is not allowed to call the 'asteroid_name_matcher' tool more than 1 time. The agent is not allowed to call the 'astronomical_discovery_finder' tool more than 1 time. The agent is not allowed to call the 'biographical_lookup' tool more than 1 time. The agent is not allowed to call the 'national_symbol_finder' tool more than 1 time. The final answer must be concise and must be between 50 and 150 words in length.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Tool, Max Calls Per Tool, The agent is not allowed to call the 'literary_author_identifier' tool more than 1 time)"
+  ]
+}

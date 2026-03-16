@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 0,
+  "max_callTimes": 4,
+  "refine_constraint": " You must answer this by calling the available tools and not by internal knowledge. Additionally, you are allowed to use at most 4 tool calls in total across all interaction turns to complete this task. The final answer must be presented in a tabular format with the following columns: 'Event', 'Date (YYYY-MM-DD)', and 'Gap (Days)'. Ensure that each row corresponds to an event and its date, and the final row must show the calculated gap in days between the two events. Your entire response must be between 300 and 500 characters long to ensure sufficient detail and conciseness.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "At most 4"
+  ]
+}

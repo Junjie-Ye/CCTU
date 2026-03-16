@@ -1,0 +1,14 @@
+{
+  "parallel_groups": [
+    [
+      "historical_event_tool",
+      "historical_event_tool"
+    ]
+  ],
+  "refine_constraint": " The historical_event_tool can be invoked at most twice during the entire task. Your final response must be concise, containing at most 200 words.",
+  "constraint": [
+    "Tool",
+    "Tool Parallel",
+    "\"Must invoke the historical_event_tool twice in a single action to simultaneously retrieve the dates of both the Treaty of Friendship between Bhutan and India and the North Atlantic Treaty Organization's establishment\""
+  ]
+}

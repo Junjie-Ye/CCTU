@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 3,
+  "refine_constraint": " You must derive the answer using tool calls within a maximum of 3 interaction turns, ensure that the total number of tool calls executed across all interaction turns is between 1 and 3, and begin your final response with the exact phrase \"The date is\" to standardize the answer format.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 3 interaction turns are allowed to solve the question."
+  ]
+}

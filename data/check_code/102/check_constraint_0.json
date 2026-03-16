@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 50,
+  "max_responseLength": 150,
+  "unit": "characters",
+  "refine_constraint": " The final answer must be between 50 and 150 characters in length to ensure clarity and conciseness, must explicitly state the casualty numbers for each event separated by a semicolon followed by the total in the format \"Prüm: X; Kemi: Y; Total: Z\", and the agent may call the 'historical_event_info_retriever' tool at most 2 times during the task.",
+  "constraint": [
+    "Response",
+    "Length",
+    "The length of the final answer must be between 50 and 150 characters, inclusive, to ensure clarity and conciseness."
+  ]
+}

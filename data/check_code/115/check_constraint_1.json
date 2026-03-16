@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "historical_event_tool": 2
+  },
+  "refine_constraint": " The historical_event_tool can be invoked at most twice during the entire task. Your final response must be concise, containing at most 200 words.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Main Category, Tool, Subcategory, Max Calls Per Tool, Specific Constraint, \"The historical_event_tool can be invoked at most twice during the entire task\")"
+  ]
+}

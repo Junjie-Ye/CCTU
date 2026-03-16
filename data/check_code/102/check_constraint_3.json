@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " The final answer must be between 50 and 150 characters in length to ensure clarity and conciseness, must explicitly state the casualty numbers for each event separated by a semicolon followed by the total in the format \"Prüm: X; Kemi: Y; Total: Z\", and the agent may call the 'historical_event_info_retriever' tool at most 2 times during the task.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

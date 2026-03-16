@@ -1,0 +1,12 @@
+{
+  "max_calls_per_tool": {
+    "anatomy_facts_provider": 1,
+    "anatomical_info_provider": 1
+  },
+  "refine_constraint": " You must use at most one call to the anatomy_facts_provider tool and at most one call to the anatomical_info_provider tool. Your response must be concise, contain at most 20 words, end with a period, and be formatted as a valid JSON object with a key \"answer\" containing the final numerical result.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "The agent may invoke the anatomy_facts_provider tool at most 1 time."
+  ]
+}

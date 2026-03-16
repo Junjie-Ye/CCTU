@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "geopolitical_event_finder": 2
+  },
+  "refine_constraint": " You must solve this by calling the available tools and not by directly answering the question. If a tool call fails, you must analyze the error, correct the parameters, and retry until you arrive at an answer. You are allowed to make at most 5 interaction rounds to solve this. Additionally, the geopolitical_event_finder tool can be invoked at most 2 times during the task. The final answer must be presented in a tabular format, including at least the date, location, involved parties, and a description of the event. The final answer must conclude with the country name in bold. Furthermore, the final answer must be between 50 and 150 characters long, inclusive, to ensure conciseness and clarity.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Tool, Max Calls Per Tool, geopolitical_event_finder can be invoked at most 2 times during the task.)"
+  ]
+}

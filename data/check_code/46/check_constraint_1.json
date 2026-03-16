@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 2,
+  "refine_constraint": " The answer must be presented in a tabular format with two columns: \"Company Name\" and \"Resulting Company\", and one row for each company formed from the split of Centura Health. The response must end with a period. You must use the provided tools to obtain the information, and you must complete this task in at most 2 interaction turns, using at most one tool call in total.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "(Interact, Round, At most 2)"
+  ]
+}

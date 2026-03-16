@@ -1,0 +1,11 @@
+{
+  "min_parallelCallTypes": 0,
+  "max_parallelCallTypes": 2,
+  "unit": "type",
+  "refine_constraint": " You must provide the answer within 2 to 8 interaction turns with the tools, each individual tool can be called at most 3 times during the process, the total number of tool calls across all interaction turns must not exceed 5, and the agent must invoke at most 2 unique tool types simultaneously in any single interaction turn.",
+  "constraint": [
+    "Interact",
+    "Parallel Calls",
+    "At most 2 (Sets an upper limit on the number of unique tool types the agent can invoke simultaneously in a interaction single turn.)"
+  ]
+}

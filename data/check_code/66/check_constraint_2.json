@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 300,
+  "max_responseLength": "inf",
+  "unit": "words",
+  "refine_constraint": " The solution must be derived through tool calls, the entire reasoning process must be completed within at most 10 interaction turns, the final answer must end with a period to ensure proper sentence closure, the response must contain at least 300 words to ensure sufficient detail in explaining the multi-step reasoning process, and the entire response must be formatted using Markdown syntax (e.g., with headings, lists, and bold/italic text) to enhance readability and structure.",
+  "constraint": [
+    "Response",
+    "Length",
+    "At least 300 words"
+  ]
+}

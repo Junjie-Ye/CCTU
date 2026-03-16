@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 15,
+  "max_responseLength": 50,
+  "unit": "words",
+  "refine_constraint": " Your response must include the exact phrase \"[Answer]\" immediately before the final sentence that explicitly states the banned vehicle type, the final sentence must end with a period, and the entire response must be between 15 and 50 words in length to ensure clarity and conciseness.",
+  "constraint": [
+    "Response",
+    "Length",
+    "(Response, Length, \"The response must be between 15 and 50 words in length to ensure clarity and conciseness.\")"
+  ]
+}

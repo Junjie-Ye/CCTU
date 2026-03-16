@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 50,
+  "max_responseLength": 100,
+  "unit": "characters",
+  "refine_constraint": " The answer must be formatted in Markdown syntax, using appropriate elements like headings, bold text, and lists to ensure clarity and structure. Additionally, the response must include the phrases \"### Laptops:\" and \"### Smartphones:\" as explicit delimiters to separate the counts for each category, using Markdown heading syntax. Your final response must contain between 50 and 100 characters (inclusive) to ensure concise yet complete information delivery, and it must end with a period to indicate proper sentence closure. If the agent chooses to invoke the `merged_item_analyzer` tool, it must be executed in parallel for the two categories.",
+  "constraint": [
+    "Response",
+    "Length",
+    "(Response, Length, Range (Specifies an acceptable minimum and maximum range for the length of the agent's entire response, measured in characters: 50 to 100 characters, to ensure concise yet complete information delivery.))"
+  ]
+}

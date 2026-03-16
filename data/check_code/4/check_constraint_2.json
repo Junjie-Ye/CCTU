@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 0,
+  "max_responseLength": 50,
+  "unit": "words",
+  "refine_constraint": " The answer must be formatted using Markdown syntax, including the use of bold text to emphasize the location. The solution must require between 2 and 5 interaction turns (inclusive). The answer must not exceed 50 words in total length and must end with the identifier \"END\". You may call the event_locator tool at most 2 times during the process.",
+  "constraint": [
+    "Response",
+    "Length",
+    "At most 50 words"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "event_location_finder": 1
+  },
+  "refine_constraint": " If the agent chooses to use the `event_location_finder` tool, the total number of calls to this tool must not exceed one. Additionally, the total number of tool calls across all interaction turns must not exceed two. No other constraints apply.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "At most 1 call to 'event_location_finder'"
+  ]
+}

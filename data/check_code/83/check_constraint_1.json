@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 0,
+  "max_callTimes": 15,
+  "refine_constraint": " The answer must end with a period to ensure proper sentence closure. Additionally, the solution must use **at most 15 total tool calls** across all interaction steps to ensure efficiency and avoid excessive iterations. The final answer must be formatted using Markdown syntax, including proper use of headings (e.g., ### Section), bullet points, bold text (**bold**), and line breaks for readability. All factual claims must be presented in plain text without formatting, while organizational elements must follow Markdown conventions.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "\"At most 15 total tool calls must be executed across all interaction turns to ensure solution efficiency and prevent infinite loops.\""
+  ]
+}

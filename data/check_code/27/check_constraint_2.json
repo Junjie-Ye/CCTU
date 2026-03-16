@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " If the agent chooses to use the `event_location_finder` tool, the total number of calls to this tool must not exceed one. Additionally, the total number of tool calls across all interaction turns must not exceed two. No other constraints apply.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 3,
+  "refine_constraint": " The answer must be formatted in Markdown, including bold text for the total number and bullet points listing the EU and UN language counts with their respective values. Additionally, the response must end with a period. The solution must be completed within at most 3 interaction turns with the toolset.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "\"At most 3 interaction turns\""
+  ]
+}

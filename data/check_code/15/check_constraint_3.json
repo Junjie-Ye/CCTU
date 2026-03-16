@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " Your response must include the exact phrase 'Royal announcement occurred on: ' immediately before the date in the final response. Additionally, you must ensure that the total number of tool calls made across all interaction turns does not exceed 2. The entire response must be formatted using Markdown syntax, including the exact phrase 'Royal announcement occurred on: ' immediately before the date in bold. Use proper Markdown elements like headings, bold, and lists if needed to enhance clarity.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

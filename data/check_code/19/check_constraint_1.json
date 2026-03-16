@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "historical_event_data_retriever": 1
+  },
+  "refine_constraint": " Your response must end with the exact phrase \"Casualties: **X**\", where X is the numerical answer. Additionally, you must ensure that the 'historical_event_data_retriever' tool is used no more than once to obtain this information.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Tool, Max Calls Per Tool, \"At most 1 for the 'historical_event_data_retriever' tool\")"
+  ]
+}

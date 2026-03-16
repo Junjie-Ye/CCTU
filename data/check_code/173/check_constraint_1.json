@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": "Rank the following from smallest to largest: (a) the tallest forest tree species, (b) the height in meters of the iconic bell tower in the city where the artist of The Birth of Venus was born, and (c) the weight in kilograms of the world's heaviest known turtle. You must solve this by calling available tools, ensuring the total number of tool calls executed does not exceed 10.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

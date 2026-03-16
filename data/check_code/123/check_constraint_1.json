@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 3,
+  "refine_constraint": " The response must end with the phrase \"Total: [number] operas combined., where [number] is replaced by the actual sum calculated from tool responses. The solution must be completed in at most 3 interaction turns with the tools. The final answer must contain between 30 and 60 words to ensure sufficient detail while maintaining conciseness.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 3 (The total number of interaction turns must not exceed 3.)"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " You must use tool calls to answer this question, and you can make at most 10 tool calls. The final answer must include a statement regarding the traditional headwear of the identified country. If the agent intends to invoke the `cultural_artifact_identifier`, the `biographical_info_retriever` must strictly be executed beforehand. If the agent intends to invoke the `biographical_info_retriever`, the `geographer_identifier` must strictly be executed beforehand. If the agent intends to invoke the `geographer_identifier`, the `river_source_locator` must strictly be executed beforehand. If the agent intends to invoke the `river_source_locator`, the `river_locator` must strictly be executed beforehand. If the agent intends to invoke the `river_locator`, the `institution_location_finder` must strictly be executed beforehand. If the agent intends to invoke the `institution_location_finder`, the `academic_institution_locator` must strictly be executed beforehand. If the agent intends to invoke the `academic_institution_locator`, the `academic_founder_identifier` must strictly be executed beforehand.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

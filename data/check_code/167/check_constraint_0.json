@@ -1,0 +1,14 @@
+{
+  "order_constraints": [
+    [
+      "urban_forest_locator",
+      "geographical_area_calculator"
+    ]
+  ],
+  "refine_constraint": " If the agent intends to invoke the `geographical_area_calculator` tool, the `urban_forest_locator` tool must be executed beforehand. Additionally, your final answer must start with the identifier \"Answer:\" and end with the identifier \"End of Answer.\" Moreover, you must invoke `scientist_research_finder` and `historical_visit_locator` simultaneously in one round. In addition, you must invoke between 2 and 4 unique tool types simultaneously in at least one interaction turn during the task. Finally, your final answer must end with a period.",
+  "constraint": [
+    "Tool",
+    "Tool Order",
+    "If you use the `geographical_area_calculator`, ensure `urban_forest_locator` is called beforehand"
+  ]
+}

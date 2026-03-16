@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "political_successor_finder": 1
+  },
+  "refine_constraint": " The answer must be formatted as a valid JSON object containing a \"successor\" key with the full name of the successor as its value. The agent must use the `political_successor_finder` tool no more than one time to determine this information.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "The agent may invoke the `political_successor_finder` tool at most once."
+  ]
+}

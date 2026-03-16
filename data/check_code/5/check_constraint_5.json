@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 30,
+  "max_responseLength": 50,
+  "unit": "characters",
+  "refine_constraint": " Your response must be a valid JSON object containing only a key 'president' with the winning candidate's name as the value. The 'president' value must not include any punctuation marks at the end. The JSON response must contain between 30 and 50 characters to ensure sufficient detail while maintaining conciseness. You are allowed at most 3 interaction rounds to solve this task, after which you must provide the final answer. Additionally, the event_outcome_retriever tool may only be used once during the solution process. The total number of tool calls across all interaction turns must be between 1 and 3 (inclusive).",
+  "constraint": [
+    "Response",
+    "Length",
+    "(Response, Length, \"The JSON response must contain between 30 and 50 characters, ensuring sufficient detail while maintaining conciseness.\")"
+  ]
+}

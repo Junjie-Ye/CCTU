@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 0,
+  "max_callTimes": 5,
+  "refine_constraint": " You must provide the answer within 2 to 8 interaction turns with the tools, each individual tool can be called at most 3 times during the process, the total number of tool calls across all interaction turns must not exceed 5, and the agent must invoke at most 2 unique tool types simultaneously in any single interaction turn.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "Interact, Call Times, \"At most 5\""
+  ]
+}

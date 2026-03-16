@@ -1,0 +1,23 @@
+{
+  "max_calls_per_tool": {
+    "gym_membership_pricing_tool": 1,
+    "cuisine_explorer": 1,
+    "corporate_partnership_finder": 1,
+    "math_formula_origin_finder": 1,
+    "nearby_reef_locator": 1,
+    "culinary_ingredient_identifier": 1,
+    "satellite_launch_info_retriever": 1,
+    "algorithm_insight_extractor": 1,
+    "geographic_feature_locator": 1,
+    "quarry_mineral_locator": 1,
+    "biographical_info_finder": 1,
+    "space_agency_locator": 1,
+    "software_algorithm_identifier": 1
+  },
+  "refine_constraint": " If the agent intends to invoke the `space_agency_locator`, the `geographic_feature_locator` must strictly be executed beforehand. If the agent intends to invoke the `satellite_launch_info_retriever`, the `space_agency_locator` must strictly be executed beforehand. If the agent intends to invoke the `corporate_partnership_finder`, the `satellite_launch_info_retriever` must strictly be executed beforehand. If the agent intends to invoke the `software_algorithm_identifier`, the `corporate_partnership_finder` must strictly be executed beforehand. If the agent intends to invoke the `algorithm_insight_extractor`, the `software_algorithm_identifier` must strictly be executed beforehand. If the agent intends to invoke the `math_formula_origin_finder`, the `algorithm_insight_extractor` must strictly be executed beforehand. If the agent intends to invoke the `biographical_info_finder`, the `math_formula_origin_finder` must strictly be executed beforehand. If the agent intends to invoke the `cuisine_explorer`, the `biographical_info_finder` must strictly be executed beforehand. If the agent intends to invoke the `culinary_ingredient_identifier`, the `cuisine_explorer` must strictly be executed beforehand. Each tool can be used at most once in the entire solution process. The final answer must end with a period to ensure sentence closure and clarity, and it must be formatted in **Markdown** syntax, with clear headings, bullet points, and emphasized terms to ensure clarity and structure.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Tool, Max Calls Per Tool, Each tool can be used at most once in the entire solution process.)"
+  ]
+}

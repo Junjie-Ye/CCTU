@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " Your response must begin with the phrase \"The local flower is\" followed by the identified flower name in a single sentence, must be at most 15 words in length to ensure conciseness, and must end with a period.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

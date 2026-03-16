@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "historical_event_retriever": 2
+  },
+  "refine_constraint": " You must use the provided tools to obtain all information, the agent may invoke the 'historical_event_retriever' function at most 2 times during the process, the final answer must end with a period, the response must be formatted using Markdown syntax with proper use of elements like bold text, headings, or code blocks, the response must explicitly include the keyword \"**Winter Olympics**\" in bold to denote the specific event being referenced, and the answer must be between 20 and 100 characters in length (character count excludes spaces).",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(\"Tool\", \"Max Calls Per Tool\", \"The agent may invoke the 'historical_event_retriever' function at most 2 times.\")"
+  ]
+}

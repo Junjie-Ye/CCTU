@@ -1,0 +1,18 @@
+{
+  "order_constraints": [
+    [
+      "sports_event_winner_retriever",
+      "sports_team_venue_locator"
+    ],
+    [
+      "sports_team_venue_locator",
+      "stadium_info_retriever"
+    ]
+  ],
+  "refine_constraint": " You must determine the answer by calling the provided tools, and your solution must involve between 3 and 5 tool calls to complete the task. The final answer must be between 5 and 10 words in length to ensure conciseness and clarity. Additionally, the final answer must be formatted using Markdown syntax, including appropriate headings and bold text to enhance clarity and structure. If the agent intends to invoke the `sports_team_venue_locator` function, the `sports_event_winner_retriever` function must be executed beforehand. If the agent intends to invoke the `stadium_info_retriever` function, the `sports_team_venue_locator` function must be executed beforehand. Parallel execution of these functions is not permitted.",
+  "constraint": [
+    "Tool",
+    "Tool Order",
+    "The Agent must invoke the `sports_event_winner_retriever` function before calling the `sports_team_venue_locator` function, and the `sports_team_venue_locator` function must be invoked before the `stadium_info_retriever` function. Parallel calls are not permitted between these functions."
+  ]
+}

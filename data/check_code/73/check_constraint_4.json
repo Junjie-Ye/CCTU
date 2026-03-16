@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 10,
+  "max_responseLength": 50,
+  "unit": "characters",
+  "refine_constraint": " The answer must end with a period to ensure proper sentence closure. Additionally, each of the following tools used in the correct trajectory must be called at most once: conservation_award_winner_finder, nature_reserve_association_finder, species_locator, zoological_research_finder, individual_location_finder, festival_finder. The final response must be formatted using Markdown, with the festival name presented in bold text. The solution must be completed within 6 to 8 interaction turns to maintain efficiency while allowing for necessary adjustments. The response must contain between 10 and 50 characters (inclusive) to ensure conciseness and avoid unnecessary elaboration.",
+  "constraint": [
+    "Response",
+    "Length",
+    "(\"Response\", \"Length\", \"The response must contain between 10 and 50 characters (inclusive) to ensure conciseness and avoid unnecessary elaboration.\")"
+  ]
+}

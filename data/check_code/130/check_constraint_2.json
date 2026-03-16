@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "product_and_appliance_specification_retriever": 2
+  },
+  "refine_constraint": " The solution must be completed in a number of interaction rounds between 2 and 3 (inclusive), while making at least 2 separate tool calls to retrieve the required specifications. Additionally, the 'product_and_appliance_specification_retriever' tool must not be invoked more than 2 times in total throughout the task. Your final response must end with a period to ensure proper sentence closure.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "The 'product_and_appliance_specification_retriever' tool can be called at most 2 times during the task."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "min_round": 1,
+  "max_round": 3,
+  "refine_constraint": " You must complete this task in a number of interaction turns that falls between 1 and 3, inclusive. Additionally, your response must end with a period to ensure proper sentence closure.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "Range (The total number of interaction turns must be between 1 and 3, inclusive.)"
+  ]
+}

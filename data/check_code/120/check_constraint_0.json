@@ -1,0 +1,11 @@
+{
+  "min_parallelCallTypes": 0,
+  "max_parallelCallTypes": 1,
+  "unit": "type",
+  "refine_constraint": " You must ensure that in every interaction turn, you invoke **at most one unique tool type** simultaneously. Additionally, the 'social_media_metrics_tool' can be used **at most twice** in total across all interaction turns. All information must be obtained through tool calls, and you must correct and retry if any call fails. Your final answer **must be formatted as a valid JSON object** containing the keys \"ronaldo_followers\", \"messi_followers\", and \"difference_in_millions\", each storing the corresponding numerical values retrieved through tool calls. The natural language explanation **must end with a period (.)** to ensure proper sentence closure before the JSON object. Finally, the total number of interaction turns you take must **not exceed 3** to ensure efficiency.",
+  "constraint": [
+    "Interact",
+    "Parallel Calls",
+    "At most 1 unique tool type can be invoked simultaneously in any interaction turn."
+  ]
+}

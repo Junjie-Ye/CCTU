@@ -1,0 +1,10 @@
+{
+  "min_round": 5,
+  "max_round": 8,
+  "refine_constraint": " The answer must be concise, not exceed 10 characters in length, must not include any punctuation marks except comma, and must include the identifier \"Answer\" immediately before the numerical result. Additionally, the solution process must complete within 5 to 8 interaction turns and use between 4 to 7 tool calls in total.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "(Interact, Round, \"Range (The total number of interaction turns must fall within a range of 5 to 8, inclusive.)\")"
+  ]
+}

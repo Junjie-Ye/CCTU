@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 6,
+  "max_callTimes": 10,
+  "refine_constraint": " Your answer must be derived by calling between 6 to 10 tool calls across all interaction turns to ensure comprehensive resolution of both city/toolchain identification and value comparison. The city_feature_identifier and city_reputation_identifier tools must be invoked in a single action step. The agent may invoke each of the following tools (city_feature_identifier, city_reputation_identifier, artist_location_finder, artwork_valuation_tool, company_locator, financial_data_retriever) at most 2 times during the solution process.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "(Main Category, Subcategory, Specific Constraint): (\"Interact\", \"Call Times\", \"Range (6 to 10 tool calls)\")"
+  ]
+}

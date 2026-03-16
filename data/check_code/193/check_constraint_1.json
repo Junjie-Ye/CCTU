@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " The response must include the phrases \"Patents: \", \"Height: \", and \"Distance: \" to clearly separate and label the three values being compared.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

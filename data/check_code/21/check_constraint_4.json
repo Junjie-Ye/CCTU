@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "historical_agreement_finder": 1
+  },
+  "refine_constraint": " Your answer must include the identifier 'AGREEMENT:' immediately before stating the name of the agreement to clearly delimit the agreement's name in the response. The response must be presented in a tabular format using rows and columns to clearly present data, with proper use of headers, consistent column widths, and alignment to enhance clarity and accessibility of the information. Additionally, you must ensure that the total number of tool calls executed across all interaction turns does not exceed three, and the tool `historical_agreement_finder` can be used at most once. The response must end with a period to ensure proper sentence closure.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "At most 1 call to 'historical_agreement_finder'"
+  ]
+}

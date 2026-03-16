@@ -1,0 +1,14 @@
+{
+  "parallel_groups": [
+    [
+      "marine_biology_facts",
+      "factual_information_retriever"
+    ]
+  ],
+  "refine_constraint": " The answer must be presented as a complete sentence ending with a period. You must use between 2 to 4 total tool calls and complete the task within 2 to 3 interaction turns. The final response must be between 10 and 20 words in length. Additionally, you may call the 'marine_biology_facts' tool no more than 2 times during your solution process. If the agent intends to use both the 'marine_biology_facts' and 'factual_information_retriever' tools, their execution must be coordinated in a single action.",
+  "constraint": [
+    "Tool",
+    "Tool Parallel",
+    "Simultaneously invoke the 'marine_biology_facts' and 'factual_information_retriever' tools in a single action to retrieve information about the number of arms in a squid and an octopus, respectively."
+  ]
+}

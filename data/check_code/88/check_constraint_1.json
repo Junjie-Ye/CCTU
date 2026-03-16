@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 50,
+  "max_responseLength": 100,
+  "unit": "words",
+  "refine_constraint": " The total number of tool calls the agent must execute must be between 3 and 5, inclusive. Additionally, the final response must be between 50 and 100 words in length. The response must end with a period to ensure proper sentence closure. Furthermore, each unique tool may be called at most once during the task execution. Usage of `bridge_identifier` is conditional upon the prior execution of `event_locator`, and subsequently, `infrastructure_info_retriever` relies on the successful completion of `bridge_identifier`.",
+  "constraint": [
+    "Response",
+    "Length",
+    "(Main Category, Response, Specific Constraint: \"The length of the agent's final response must be between 50 and 100 words.\")"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 6,
+  "max_callTimes": 10,
+  "refine_constraint": "Determine the higher value between (a) the attendance of the parade held in the capital of the land where the tribe converses in a language related to the institute researching ancient civilizations, and (b) the capacity of the famous theater in the city considered the heart of the Renaissance. Your response must be concise and not exceed 500 words. If the agent intends to invoke the `event_attendance_tracker` tool for part (a), the `tribal_language_identifier` must be executed first, followed by `ethnic_group_locator`, and then `capital_city_finder` in that sequence. For part (b), if the agent intends to invoke the `venue_information_retriever` tool, the `historical_city_identifier` must be executed first, followed by `cultural_landmark_locator`. The agent must execute `event_locator` and `event_attendance_tracker` for part (a) after the sequence. The total number of tool calls made by the Agent to solve the question must be within the range of 6 to 10. The final comparison of the two values must be presented in a tabular format with rows for each value and columns for the description and numeric value. The table must use the '||' symbol to separate columns for clarity and standardization.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "The total number of tool calls made by the Agent to solve the question must be within the range of 6 to 10."
+  ]
+}

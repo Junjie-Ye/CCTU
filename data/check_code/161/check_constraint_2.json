@@ -1,0 +1,11 @@
+{
+  "min_parallelCallTypes": 2,
+  "max_parallelCallTypes": "inf",
+  "unit": "type",
+  "refine_constraint": " Your response must be at least 200 words to ensure sufficient detail and justification of the steps taken to arrive at the answer. The final numerical answer must be prefixed with \"Final Answer:\" to clearly separate it from the explanation. Additionally, you must invoke at least two different tool types simultaneously in at least one interaction turn during your solution process. **If the agent invokes any tool to identify cultural landmarks and their associated regions, `cultural_landmark_identifier` and `landmark_region_identifier` tools must be executed concurrently in a single action step.** You may call each tool type at most once during the solution process. You may make no more than 10 total tool calls across all interaction turns. Your entire response must be formatted using Markdown syntax, including appropriate use of headings, lists, bold/italic text, and code blocks to enhance readability and structure.",
+  "constraint": [
+    "Interact",
+    "Parallel Calls",
+    "At least 2 unique tool types must be invoked simultaneously in at least one turn during the task"
+  ]
+}

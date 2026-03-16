@@ -1,0 +1,10 @@
+{
+  "min_round": 2,
+  "max_round": 4,
+  "refine_constraint": " The answer must be between 100 and 150 characters long to ensure clarity and conciseness. The agent must not invoke more than two unique tool types simultaneously in any single interaction turn, and the total number of tool calls across all interaction turns must be between 2 and 4 inclusive.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

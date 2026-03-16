@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 0,
+  "max_responseLength": 200,
+  "unit": "words",
+  "refine_constraint": " The historical_event_tool can be invoked at most twice during the entire task. Your final response must be concise, containing at most 200 words.",
+  "constraint": [
+    "Response",
+    "Length",
+    "(Main Category, Response, Subcategory, Length, Specific Constraint, \"At most 200 words\")"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "order_constraints": [
+    [
+      "startup_identifier",
+      "corporate_acquisition_finder",
+      "product_information_retriever"
+    ]
+  ],
+  "refine_constraint": " The answer must be concise and not exceed 200 characters. The `startup_identifier` must be called before `corporate_acquisition_finder`, and `corporate_acquisition_finder` must be called before `product_information_retriever`. The solution must use between 7 and 9 interaction turns, inclusive. Each of the tools `startup_identifier`, `corporate_acquisition_finder`, and `product_information_retriever` must be called at most once. The final answer must include the delimiter \"[ANSWER]\" before the landmark name to clearly indicate the answer section.",
+  "constraint": [
+    "Tool",
+    "Tool Order",
+    "(Main Category, Tool, Tool Order: The `startup_identifier` must be called before `corporate_acquisition_finder`, and `corporate_acquisition_finder` must be called before `product_information_retriever`)"
+  ]
+}

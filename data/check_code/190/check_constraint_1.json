@@ -1,0 +1,21 @@
+{
+  "max_calls_per_tool": {
+    "theater_info_retriever": 3,
+    "historical_figure_locator": 3,
+    "landmark_info_retriever": 3,
+    "river_length_calculator": 3,
+    "historical_residence_finder": 3,
+    "residence_locator": 3,
+    "historical_visit_locator": 3,
+    "lake_information_retriever": 3,
+    "artist_information_retriever": 3,
+    "poet_work_identifier": 3,
+    "island_counter": 3
+  },
+  "refine_constraint": "Rank these from highest to lowest: (a) the height of the largest waterfall visited by the artist who painted the famous mural in the city park, (b) the capacity of the theater in the city where the poet who wrote the sonnet named after a celestial body resides, and (c) the number of islands in the largest lake in the world. Your final answer must be formatted as a valid JSON object that includes the three ranked values, their corresponding numerical results, and a clear ranking order from highest to lowest. You must ensure that each tool is called at most 3 times during the process. If the agent intends to utilize either `historical_visit_locator` or `landmark_info_retriever`, it is strictly required to ensure that `artist_information_retriever` has been executed beforehand. The total number of tool calls must be between 8 and 10.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "Each tool can be called at most 3 times"
+  ]
+}

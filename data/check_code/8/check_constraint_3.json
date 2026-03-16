@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 2,
+  "refine_constraint": " The answer must be formatted using Markdown, including the keyword \"Commander: \" immediately before the individual's name, and the name must be in bold for clarity and emphasis. The response must be concise and must not exceed 50 words in total length and first sentence should end with a question mark. The solution must be completed in at most two interaction round with the tools.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 2"
+  ]
+}

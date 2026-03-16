@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 3,
+  "refine_constraint": " Your response must include the phrases \"• Human: [X]\" and \"• Shark: [Y]\" as delimiters before stating the difference. The solution must involve at least two separate tool calls to retrieve information about human and shark teeth. You must not call any individual tool more than twice during this process. You must complete this task within at most 3 interaction turns, including all tool calls and final response.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "(Round, At most, At most 3 interaction turns)"
+  ]
+}

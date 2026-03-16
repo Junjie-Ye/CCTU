@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "paleontologist_discovery_finder": 1
+  },
+  "refine_constraint": " You must follow these constraints: If the agent intends to invoke the 'paleontological_discovery_locator', the 'paleontologist_discovery_finder' must strictly be executed beforehand. Additionally, your final response must end with the phrase 'Final Answer: [traditional dessert name]' and the entire response must be formatted using Markdown syntax with proper use of headings, bold/italic text, lists, and code blocks for clarity. The tool 'paleontologist_discovery_finder' must be called at most 1 time during the solution process.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "Tool: paleontologist_discovery_finder, Subcategory: Max Calls Per Tool, Specific Constraint: At most 1"
+  ]
+}

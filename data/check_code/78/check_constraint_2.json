@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " You must solve this using at most 10 tool calls in total. Each step must be solved using the appropriate tool, the answer must be derived entirely from the output of these tools, and each of the following tools may be used at most once: cultural_insight_provider, ingredient_identifier, scientific_discovery_finder, product_information_retriever, sports_sponsorship_finder, gene_trait_identifier, biographical_info_finder.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

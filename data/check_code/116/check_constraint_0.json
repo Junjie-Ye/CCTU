@@ -1,0 +1,11 @@
+{
+  "min_parallelCallTypes": 2,
+  "max_parallelCallTypes": "inf",
+  "unit": "num",
+  "refine_constraint": " The answer must be presented in a valid JSON format, ensuring correct syntax with key-value pairs, commas, colons, and quotation marks, and must be fully parsed without errors. Additionally, the JSON response must include the key \"Prüm_Explosion_Casualties\" followed by a colon and the value retrieved for the Prüm explosion, and the key \"SS_Noromic_Fire_Casualties\" followed by a colon and the value retrieved for the SS Noromic fire, separated by a comma for clarity. At least one interaction turn must involve invoking at least 2 tool calls simultaneously. The response must be at least 150 characters long to ensure sufficient detail and completeness. The JSON must not include any invalid punctuation, such as trailing commas or semicolons, to ensure valid syntax. The agent must complete this task with no more than 5 tool calls in total.",
+  "constraint": [
+    "Interact",
+    "Parallel Calls",
+    "At least one interaction turn must involve invoking at least 2 tool calls simultaneously."
+  ]
+}

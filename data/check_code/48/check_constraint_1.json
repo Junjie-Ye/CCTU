@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 2,
+  "refine_constraint": " The answer must conclude with \"Vietnam.\" to ensure a clear and consistent ending for the location answer. You are allowed a maximum of two interaction turns to solve this question, and you may use the `historical_event_locator` tool at most once during the solution process.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 2 interaction turns are allowed to solve the question."
+  ]
+}

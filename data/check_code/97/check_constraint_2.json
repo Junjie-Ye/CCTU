@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 0,
+  "max_callTimes": 6,
+  "refine_constraint": " Your response must conclude with the identifier \"**target temperature**\" and end with a period to indicate the final result clearly. Your actions is constrained to a maximum of 6 tool calls in total, while the task execution must span at least 6 interaction turns and each tool must be called at most once.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "At most 6"
+  ]
+}

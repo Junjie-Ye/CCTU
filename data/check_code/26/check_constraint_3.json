@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "election_result_analyzer": 3
+  },
+  "refine_constraint": " Your response must be derived by interacting with the provided tools, must not exceed 8 interaction rounds, must format the answer as a valid JSON object containing the key 'reelected_candidate' with the candidate's name as the value, must ensure the natural language explanation ends with a period to ensure proper sentence closure, and must limit calls to the election_result_analyzer tool to a maximum of 3 times.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Tool, Max Calls Per Tool, The election_result_analyzer tool can be called at most 3 times)"
+  ]
+}

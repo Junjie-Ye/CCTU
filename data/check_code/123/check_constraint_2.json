@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 30,
+  "max_responseLength": 60,
+  "unit": "words",
+  "refine_constraint": " The response must end with the phrase \"Total: [number] operas combined., where [number] is replaced by the actual sum calculated from tool responses. The solution must be completed in at most 3 interaction turns with the tools. The final answer must contain between 30 and 60 words to ensure sufficient detail while maintaining conciseness.",
+  "constraint": [
+    "Response",
+    "Length",
+    "(\"Response\", \"Length\", \"Must include a word count range of 30 to 60 words to ensure sufficient detail while maintaining conciseness.\")"
+  ]
+}

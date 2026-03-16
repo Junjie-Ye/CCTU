@@ -1,0 +1,14 @@
+{
+  "parallel_groups": [
+    [
+      "merged_item_analyzer",
+      "merged_item_analyzer"
+    ]
+  ],
+  "refine_constraint": " The answer must be formatted in Markdown syntax, using appropriate elements like headings, bold text, and lists to ensure clarity and structure. Additionally, the response must include the phrases \"### Laptops:\" and \"### Smartphones:\" as explicit delimiters to separate the counts for each category, using Markdown heading syntax. Your final response must contain between 50 and 100 characters (inclusive) to ensure concise yet complete information delivery, and it must end with a period to indicate proper sentence closure. If the agent chooses to invoke the `merged_item_analyzer` tool, it must be executed in parallel for the two categories.",
+  "constraint": [
+    "Tool",
+    "Tool Parallel",
+    "(Tool, Tool Parallel, Must invoke two separate instances of `merged_item_analyzer` in a single action to analyze laptop and smartphone brands concurrently, ensuring parallel execution of both tool calls within the same step.)"
+  ]
+}

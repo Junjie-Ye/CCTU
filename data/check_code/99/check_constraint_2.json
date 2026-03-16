@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 10,
+  "max_responseLength": 50,
+  "unit": "words",
+  "refine_constraint": " If the agent intends to invoke the average_altitude_calculator tool, the historical_event_locator tool must be executed beforehand. Each tool must be called at most once. The final answer must be between 10 and 50 words in length, and the agent's response must begin with the identifier \"Answer Start: \" to indicate the start of the final answer.",
+  "constraint": [
+    "Response",
+    "Length",
+    "The final answer must be between 10 and 50 words in length."
+  ]
+}

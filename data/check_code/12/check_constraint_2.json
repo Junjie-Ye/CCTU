@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "corporate_event_finder": 1
+  },
+  "refine_constraint": " The response must contain between 10 and 30 words to ensure clarity and conciseness, and it must be formatted as a valid JSON object with proper key-value pairs, commas, colons, and quotation marks to ensure it can be parsed without errors. The agent must execute at most 2 tool calls in total across all interaction turns to complete the task. The task must be completed within at most 2 interaction turns.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "The tool 'corporate_event_finder' can be used at most 1 time during the task."
+  ]
+}

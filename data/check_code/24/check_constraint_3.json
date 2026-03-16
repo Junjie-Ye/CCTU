@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 0,
+  "max_callTimes": 2,
+  "refine_constraint": " Your answer must begin with the phrase \"The nurses were released on\" to ensure a consistent and clear response format, and it must be structured as a valid JSON object, containing a key-value pair where the key is \"release_date\" and the value is the exact date in \"YYYY-MM-DD\" format. The agent must complete the task in a number of interaction turns between 1 and 3, inclusive, to ensure efficiency and correctness. Additionally, the agent must not make more than 2 total tool calls to ensure efficiency and allow for a small buffer in case of errors.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "At most (The total number of tool calls the agent can execute must not exceed 2 to ensure efficiency and allow for a small buffer in case of errors.)"
+  ]
+}

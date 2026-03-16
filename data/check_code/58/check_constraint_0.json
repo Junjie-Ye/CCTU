@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "cultural_information_retriever": 2
+  },
+  "refine_constraint": " The agent must not call the 'cultural_information_retriever' tool more than 2 times during the process. The tool 'workshop_locator' must be called after the tool 'business_locator' in the execution sequence. The agent must complete the task in a number of interaction turns that falls within the range of 6 to 8 (inclusive). The agent's final response must be formatted using Markdown syntax, including appropriate headings and bold text for clarity and structure, and must end with a period (.) to ensure proper sentence closure.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Tool, Max Calls Per Tool, The tool 'cultural_information_retriever' can be invoked at most 2 times.)"
+  ]
+}

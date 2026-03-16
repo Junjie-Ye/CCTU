@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " If the agent intends to invoke the `space_agency_locator`, the `geographic_feature_locator` must strictly be executed beforehand. If the agent intends to invoke the `satellite_launch_info_retriever`, the `space_agency_locator` must strictly be executed beforehand. If the agent intends to invoke the `corporate_partnership_finder`, the `satellite_launch_info_retriever` must strictly be executed beforehand. If the agent intends to invoke the `software_algorithm_identifier`, the `corporate_partnership_finder` must strictly be executed beforehand. If the agent intends to invoke the `algorithm_insight_extractor`, the `software_algorithm_identifier` must strictly be executed beforehand. If the agent intends to invoke the `math_formula_origin_finder`, the `algorithm_insight_extractor` must strictly be executed beforehand. If the agent intends to invoke the `biographical_info_finder`, the `math_formula_origin_finder` must strictly be executed beforehand. If the agent intends to invoke the `cuisine_explorer`, the `biographical_info_finder` must strictly be executed beforehand. If the agent intends to invoke the `culinary_ingredient_identifier`, the `cuisine_explorer` must strictly be executed beforehand. Each tool can be used at most once in the entire solution process. The final answer must end with a period to ensure sentence closure and clarity, and it must be formatted in **Markdown** syntax, with clear headings, bullet points, and emphasized terms to ensure clarity and structure.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

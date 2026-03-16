@@ -1,0 +1,21 @@
+{
+  "max_calls_per_tool": {
+    "rural_area_feature_locator": 1,
+    "wood_sourcing_locator": 1,
+    "famous_peak_identifier": 1,
+    "supply_chain_tracker": 1,
+    "individual_location_finder": 1,
+    "local_handicraft_identifier": 1,
+    "musician_instrument_finder": 1,
+    "nearby_forest_locator": 1,
+    "university_location_finder": 1,
+    "ferry_locator": 1,
+    "distribution_center_locator": 1
+  },
+  "refine_constraint": " You must ensure that each tool can be used at most once during the solution process, and the total number of interaction turns must not exceed 8. The final answer must be concise, not exceeding 50 words.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Tool, Max Calls Per Tool, \"Each tool can be used at most once during the solution process.\")"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "parallel_groups": [
+    [
+      "historical_event_date_finder",
+      "historical_event_date_finder"
+    ]
+  ],
+  "refine_constraint": " If the agent intends to use the historical_event_date_finder, it must execute two distinct function calls within a single action step. Additionally, the historical_event_date_finder tool may be called at most 2 times during the entire task execution. Your final response must start with the exact phrase \"The number of days is\" and end with a period.",
+  "constraint": [
+    "Tool",
+    "Tool Parallel",
+    "(Tool, Tool Parallel, Must invoke two distinct function calls to the historical_event_date_finder in a single action step to retrieve both the UN ceasefire and VW Beetle arrival dates.)"
+  ]
+}

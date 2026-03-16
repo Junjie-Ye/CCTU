@@ -1,0 +1,18 @@
+{
+  "order_constraints": [
+    [
+      "event_location_finder",
+      "neighborhood_identifier"
+    ],
+    [
+      "neighborhood_identifier",
+      "population_density_calculator"
+    ]
+  ],
+  "refine_constraint": " If the agent intends to invoke the `neighborhood_identifier`, the `event_location_finder` must strictly be executed beforehand. If the agent intends to invoke the `population_density_calculator`, the `neighborhood_identifier` must strictly be executed beforehand. Each tool can be called at most once. The interaction must be completed in at most 5 rounds, and the total number of tool calls across all rounds must not exceed 4.",
+  "constraint": [
+    "Tool",
+    "Tool Order",
+    "(Tool, Tool Order, The tools must be invoked in the following order: event_location_finder must be called first, then neighborhood_identifier, and finally population_density_calculator.)"
+  ]
+}

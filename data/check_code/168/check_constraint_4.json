@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " If the agent intends to invoke `specialty_beverage_locator`, the `nearby_plant_locator` must be executed beforehand. Additionally, if the agent chooses to use both `fort_feature_locator` and `nearby_plant_locator`, they must be invoked in the same action step. The agent's response must include the delimiter \"##\" to separate the page count of the novel from the average number of patients treated per day at the hospital, and the final answer must be presented in a tabular format with the following rows: \"Novel Page Count\" and \"Average Patients Treated Per Day\".",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

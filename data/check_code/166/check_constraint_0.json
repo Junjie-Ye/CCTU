@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 8,
+  "max_callTimes": 12,
+  "refine_constraint": " The solution must use between 8 and 12 total tool calls across all interaction steps to ensure thorough investigation while avoiding excessive redundancy. The total number of interaction turns must be at most 15. The final answer must be a valid JSON object with a key 'answer' containing either 'Yes.}' or 'No.}' as its value, and the JSON must end with a period (e.g., 'Yes.' or 'No.'). The JSON must not include any additional keys or metadata beyond the required 'answer' key.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "Range 8-12"
+  ]
+}

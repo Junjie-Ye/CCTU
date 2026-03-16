@@ -1,0 +1,14 @@
+{
+  "parallel_groups": [
+    [
+      "cultural_heritage_locator",
+      "nearby_reserve_locator"
+    ]
+  ],
+  "refine_constraint": " You must complete this task using between 8 and 12 interaction turns, inclusive. If the agent intends to invoke multiple tools, cultural_heritage_locator and nearby_reserve_locator must be called in the same step.",
+  "constraint": [
+    "Tool",
+    "Tool Parallel",
+    "(Main Category, Tool, Tool Parallel (Simultaneous (Mandates that the agent must invoke multiple specified tools in a single action instruction to be executed concurrently, cultural_heritage_locator and nearby_reserve_locator must be called in the same step. This constraint tests the agent's ability to plan and coordinate parallel processes in a single turn.)))"
+  ]
+}

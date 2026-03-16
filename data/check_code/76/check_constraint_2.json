@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " If the agent intends to invoke the `author_book_finder` tool, the `award_winner_retriever` tool must be executed beforehand. The answer must be formatted in Markdown, with the book title presented in bold text using Markdown formatting (e.g., **the target book title**).",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

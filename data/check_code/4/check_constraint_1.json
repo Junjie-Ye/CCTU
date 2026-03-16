@@ -1,0 +1,10 @@
+{
+  "min_round": 2,
+  "max_round": 5,
+  "refine_constraint": " The answer must be formatted using Markdown syntax, including the use of bold text to emphasize the location. The solution must require between 2 and 5 interaction turns (inclusive). The answer must not exceed 50 words in total length and must end with the identifier \"END\". You may call the event_locator tool at most 2 times during the process.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "(Interact, Round, Range (The total number of interaction turns must be between 2 and 5 (inclusive).))"
+  ]
+}

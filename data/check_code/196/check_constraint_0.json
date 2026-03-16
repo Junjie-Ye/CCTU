@@ -1,0 +1,21 @@
+{
+  "max_calls_per_tool": {
+    "river_locator": 1,
+    "ancient_civilization_locator": 1,
+    "advanced_arithmetic_calculator": 1,
+    "historical_event_retriever": 1,
+    "historical_landmark_finder": 1,
+    "river_length_finder": 1,
+    "mural_artist_finder": 1,
+    "geographical_facts_retriever": 1,
+    "moonwalk_astronaut_finder": 1,
+    "biographical_info_finder": 1,
+    "landmark_city_locator": 1
+  },
+  "refine_constraint": " You must solve this by calling the provided tools, ensuring each unique tool type is invoked at most 1 time during the solution process. All information must be obtained through tool calls, and you must correct any errors by adjusting parameters and retrying until successful. The solution must be completed in at most 15 interaction turns. The final answer must be between 100 and 500 characters in length to ensure clarity of explanation without excessive verbosity. If the agent intends to invoke the 'biographical_info_finder' and 'river_locator' tools, they must be executed in the same step, contingent upon the prior retrieval and validation of the necessary contextual data.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "\"Each unique tool type may be invoked at most 1 time during the solution process\""
+  ]
+}

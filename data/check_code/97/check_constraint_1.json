@@ -1,0 +1,19 @@
+{
+  "max_calls_per_tool": {
+    "continent_locator": 1,
+    "sports_event_locator": 1,
+    "landmark_city_locator": 1,
+    "climate_data_retriever": 1,
+    "economic_data_retriever": 1,
+    "rainforest_info_provider": 1,
+    "historical_fact_finder": 1,
+    "biographical_info_retriever": 1,
+    "sports_event_venue_locator": 1
+  },
+  "refine_constraint": " Your response must conclude with the identifier \"**target temperature**\" and end with a period to indicate the final result clearly. Your actions is constrained to a maximum of 6 tool calls in total, while the task execution must span at least 6 interaction turns and each tool must be called at most once.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "Each tool must be called at most once."
+  ]
+}

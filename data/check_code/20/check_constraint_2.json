@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 0,
+  "max_responseLength": 100,
+  "unit": "characters",
+  "refine_constraint": " The agent must obtain the answer by calling tools, is permitted to invoke the 'individual_movement_tracker' tool at most 2 times during the task, must complete the task within a maximum of 3 total interaction turns, the final response must not exceed 100 characters in length, must end with a period, and must be formatted using Markdown syntax with at least one bold text element.",
+  "constraint": [
+    "Response",
+    "Length",
+    "(Response, Length, At most 100 characters)"
+  ]
+}

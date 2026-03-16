@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " Your final answer must be presented in a valid JSON format, including both the numerical result and the reasoning process. The agent must not call the `population_data_retriever` tool more than once, the total number of tool calls must be at most 10, and the agent must perform at least one interaction turn where it invokes at least two unique tool type simultaneously. Additionally, the response must be between 500 and 1500 characters long, inclusive, to ensure sufficient detail and conciseness.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

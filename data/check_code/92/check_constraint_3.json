@@ -1,0 +1,34 @@
+{
+  "order_constraints": [
+    [
+      "capital_identifier",
+      "literary_award_search"
+    ],
+    [
+      "literary_award_search",
+      "author_works_finder"
+    ],
+    [
+      "author_works_finder",
+      "book_to_movie_adapter"
+    ],
+    [
+      "book_to_movie_adapter",
+      "film_metadata_retriever"
+    ],
+    [
+      "film_metadata_retriever",
+      "biographical_data_search"
+    ],
+    [
+      "biographical_data_search",
+      "country_sport_identifier"
+    ]
+  ],
+  "refine_constraint": " The answer must be concise, contain at most 20 words, be formatted as a valid JSON object with a single key \"answer\" containing the result. The final identified sport must be explicitly stated and enclosed within double square brackets (e.g., [[Baseball]]) to serve as the unique identifier for the answer. if the agent intends to invoke any tool in the sequence [capital_identifier, literary_award_search, author_works_finder, book_to_movie_adapter, film_metadata_retriever, biographical_data_search, country_sport_identifier], the preceding tools in the sequence must be executed strictly beforehand, and each tool may be invoked at most once during execution.",
+  "constraint": [
+    "Tool",
+    "Tool Order",
+    "The tools must be invoked in the following exact sequence: capital_identifier, literary_award_search, author_works_finder, book_to_movie_adapter, film_metadata_retriever, biographical_data_search, country_sport_identifier"
+  ]
+}

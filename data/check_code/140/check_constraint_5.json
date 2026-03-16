@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " The answer must be presented as a complete sentence, must end with a period to ensure proper sentence closure, must include the phrase \"This concludes the calculation.\" at the end to provide a clear and consistent ending, and must be formatted using Markdown syntax, including proper use of headings, lists, bold/italic text, and code blocks to ensure clarity and structure. The solution must involve at most 3 tool calls to ensure efficiency. Additionally, during the task, the agent must invoke at least two tool calls simultaneously in at least one interaction turn to ensure parallel processing is leveraged.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

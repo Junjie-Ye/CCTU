@@ -1,0 +1,20 @@
+{
+  "max_calls_per_tool": {
+    "musician_locator": 1,
+    "neighborhood_identifier": 1,
+    "event_location_finder": 1,
+    "library_location_finder": 1,
+    "nearby_business_locator": 1,
+    "exhibition_finder": 1,
+    "culinary_ingredient_identifier": 1,
+    "population_density_calculator": 1,
+    "product_origin_finder": 1,
+    "rental_price_analyzer": 1
+  },
+  "refine_constraint": " If the agent intends to invoke the `neighborhood_identifier`, the `event_location_finder` must strictly be executed beforehand. If the agent intends to invoke the `population_density_calculator`, the `neighborhood_identifier` must strictly be executed beforehand. Each tool can be called at most once. The interaction must be completed in at most 5 rounds, and the total number of tool calls across all rounds must not exceed 4.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "Each tool can be called at most once"
+  ]
+}

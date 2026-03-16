@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 0,
+  "max_responseLength": 1000,
+  "unit": "characters",
+  "refine_constraint": " The solution must ensure that the 'business_location_finder' tool is called before the 'country_info_retriever' tool, the total number of interaction turns must be between 10 and 12 inclusive, **if the agent intends to invoke both 'country_info_retriever' and 'geographical_feature_associator', they must be executed concurrently in a single action step** after confirming the target country and associated region, and the final answer must conclude with the exact phrase \"Final Answer: \" followed by the numerical result in bold. The final answer must be concise and not exceed 1000 characters.",
+  "constraint": [
+    "Response",
+    "Length",
+    "(Main Category, Length, At most 1000 characters)"
+  ]
+}

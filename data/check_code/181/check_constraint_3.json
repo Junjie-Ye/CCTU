@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 0,
+  "max_responseLength": 500,
+  "unit": "characters",
+  "refine_constraint": " You must ensure that at least one interaction turn during the entire task involves the agent invoking at least 2 unique tool types simultaneously. Additionally, the agent is limited to invoking the 'musical_composition_finder' tool at most 2 times during the entire task. The agent's final answer must end with the phrase \"Final Answer\" followed by the numerical result enclosed in a box, like \"Final Answer: $\\boxed{<result>}$\". The final answer must be concise and not exceed 500 characters. Furthermore, the final answer must be structured as a valid JSON object, including a \"result\" key with the numerical value as the product of the library's area and the year of the philosopher's first significant work.",
+  "constraint": [
+    "Response",
+    "Length",
+    "(Response, Length, At most 500 characters)"
+  ]
+}

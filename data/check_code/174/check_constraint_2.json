@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 50,
+  "max_responseLength": "inf",
+  "unit": "characters",
+  "refine_constraint": " You must use at most 8 tool calls to solve this, your response must end with the final answer enclosed in a box, e.g., **Final Answer:** $\\boxed{\\{numeric\\}}$, and your explanation must be at least 50 characters long.",
+  "constraint": [
+    "Response",
+    "Length",
+    "(Main Category, Length, At least 50 characters)"
+  ]
+}

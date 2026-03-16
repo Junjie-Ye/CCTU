@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 50,
+  "max_responseLength": 150,
+  "unit": "words",
+  "refine_constraint": " You must use the provided tools to find the answer, and you must complete the task with at most 10 tool calls. The agent is not allowed to call the 'literary_author_identifier' tool more than 1 time. The agent is not allowed to call the 'historical_contemporary_finder' tool more than 1 time. The agent is not allowed to call the 'literary_work_identifier' tool more than 1 time. The agent is not allowed to call the 'literary_character_finder' tool more than 1 time. The agent is not allowed to call the 'asteroid_name_matcher' tool more than 1 time. The agent is not allowed to call the 'astronomical_discovery_finder' tool more than 1 time. The agent is not allowed to call the 'biographical_lookup' tool more than 1 time. The agent is not allowed to call the 'national_symbol_finder' tool more than 1 time. The final answer must be concise and must be between 50 and 150 words in length.",
+  "constraint": [
+    "Response",
+    "Length",
+    "(Response, Range, Response Length must be between 50 and 150 words)"
+  ]
+}

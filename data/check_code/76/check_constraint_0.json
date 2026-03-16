@@ -1,0 +1,14 @@
+{
+  "order_constraints": [
+    [
+      "award_winner_retriever",
+      "author_book_finder"
+    ]
+  ],
+  "refine_constraint": " If the agent intends to invoke the `author_book_finder` tool, the `award_winner_retriever` tool must be executed beforehand. The answer must be formatted in Markdown, with the book title presented in bold text using Markdown formatting (e.g., **the target book title**).",
+  "constraint": [
+    "Tool",
+    "Tool Order",
+    "The `award_winner_retriever` function must be invoked before the `author_book_finder` function. This ensures the author's name is obtained first before querying their books."
+  ]
+}

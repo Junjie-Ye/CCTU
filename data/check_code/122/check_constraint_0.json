@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 50,
+  "max_responseLength": "inf",
+  "unit": "characters",
+  "refine_constraint": " The answer must be at least 50 characters in length to ensure a detailed explanation of the calculation process, and it must end with a question mark (?).",
+  "constraint": [
+    "Response",
+    "Length",
+    "(Response, Length, At least 50 characters)"
+  ]
+}

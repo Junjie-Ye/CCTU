@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " **If the agent intends to invoke the `geographical_proximity_finder`, the `desert_feature_locator` must strictly be executed beforehand. If the agent intends to invoke the `scientific_discovery_finder`, the `geographical_proximity_finder` must strictly be executed beforehand. If the agent intends to invoke the `research_location_finder`, the `scientific_discovery_finder` must strictly be executed beforehand. If the agent intends to invoke the `geographical_area_calculator`, the `research_location_finder` must strictly be executed beforehand. If the agent intends to invoke the `landmark_country_skyscraper_finder`, the `geographical_area_calculator` must strictly be executed beforehand. If the agent intends to invoke the `building_info_retriever`, the `landmark_country_skyscraper_finder` must strictly be executed beforehand. If the agent intends to invoke the `advanced_calculator`, the `building_info_retriever` must strictly be executed beforehand.** Additionally, each of the tools 'desert_feature_locator', 'geographical_proximity_finder', 'scientific_discovery_finder', 'research_location_finder', 'geographical_area_calculator', 'landmark_country_skyscraper_finder', 'building_info_retriever', and 'advanced_calculator' must be used at most 1 time during the solution process. You must invoke \"geographical_area_calculator\" and \"landmark_country_skyscraper_finder\" in the same step.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

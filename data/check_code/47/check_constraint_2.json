@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "historical_event_data_retriever": 2
+  },
+  "refine_constraint": " Your response must be between 10 and 30 words in length to ensure conciseness while including the exact casualty count. Additionally, the agent must use an appropriate number of tool calls to arrive at the answer, the total number of interaction turns must not exceed a reasonable limit, and the final answer must be formatted as a valid JSON object with a key 'casualties' containing the exact number of fatalities.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "The historical_event_data_retriever tool must be called at most 2 times."
+  ]
+}

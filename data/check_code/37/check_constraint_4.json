@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 0,
+  "max_callTimes": 2,
+  "refine_constraint": " Your response must be formatted using Markdown syntax with appropriate elements like headings or bold text to enhance clarity. The answer must be retrieved via the earthquake_event_retriever tool no more than once. The solution must not require more than 2 total tool calls across all interaction steps. Your final response must end with the exact phrase \"Earthquake Magnitude: [magnitude value]\" where [magnitude value] is replaced with the numeric magnitude retrieved from the tool, and must conclude with a period as the final punctuation mark.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "At most 2 tool calls may be executed across all interaction turns"
+  ]
+}

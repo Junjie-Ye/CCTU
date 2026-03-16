@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 2,
+  "max_callTimes": 3,
+  "refine_constraint": " The total number of tool calls must be in the range of 2 to 3. The response must end with a period. Additionally, the response must include the keyword \"Difference:\" immediately before stating the final numerical answer to explicitly delimit the result.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "The total number of tool calls must be in the range of 2 to 3."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "min_parallelCallTypes": 0,
+  "max_parallelCallTypes": 2,
+  "unit": "type",
+  "refine_constraint": " You must obtain the answer by calling the provided tools, ensuring that no single tool is used more than once in the process, at most two unique tool type is invoked simultaneously in any interaction turn, and the total number of interaction turns must be between 2 and 3 (inclusive).",
+  "constraint": [
+    "Interact",
+    "Parallel Calls",
+    "At most 2 unique tool type can be invoked simultaneously in any interaction turn."
+  ]
+}

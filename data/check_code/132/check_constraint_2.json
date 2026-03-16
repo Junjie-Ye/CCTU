@@ -1,0 +1,10 @@
+{
+  "min_round": 2,
+  "max_round": 3,
+  "refine_constraint": " You must obtain the answer by calling the provided tools, ensuring that no single tool is used more than once in the process, at most two unique tool type is invoked simultaneously in any interaction turn, and the total number of interaction turns must be between 2 and 3 (inclusive).",
+  "constraint": [
+    "Interact",
+    "Round",
+    "Range (2-3)"
+  ]
+}

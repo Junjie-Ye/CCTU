@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "altitude_tool": 2
+  },
+  "refine_constraint": " You must obtain information by calling tools and ensure the solution involves at least 2 tool calls to retrieve the average altitudes of both mountain ranges. The total number of interaction turns (tool calls) must not exceed 4 in your solution process. If the agent chooses to invoke the altitude_tool for both mountain ranges, the calls must be executed in a single parallel action step. The altitude_tool must be invoked no more than 2 times across the entire solution.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "At most 2 calls to the altitude_tool"
+  ]
+}

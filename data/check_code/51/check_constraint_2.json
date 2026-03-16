@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 8,
+  "refine_constraint": " You must ensure that each tool can be used at most once during the solution process, and the total number of interaction turns must not exceed 8. The final answer must be concise, not exceeding 50 words.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "(Interact, Round, At most 8)"
+  ]
+}

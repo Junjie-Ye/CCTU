@@ -1,0 +1,42 @@
+{
+  "order_constraints": [
+    [
+      "company_identifier",
+      "mathematician_theorem_finder"
+    ],
+    [
+      "company_identifier",
+      "notable_individual_finder"
+    ],
+    [
+      "company_identifier",
+      "theorem_finder"
+    ],
+    [
+      "company_identifier",
+      "historical_explorer_finder"
+    ],
+    [
+      "company_identifier",
+      "individual_location_finder"
+    ],
+    [
+      "company_identifier",
+      "cultural_event_identifier"
+    ],
+    [
+      "company_identifier",
+      "country_size_ranker"
+    ],
+    [
+      "company_identifier",
+      "algorithm_concept_explorer"
+    ]
+  ],
+  "refine_constraint": " If the agent intends to invoke a tool other than 'company_identifier', the 'company_identifier' tool must strictly be executed beforehand.",
+  "constraint": [
+    "Tool",
+    "Tool Order",
+    "(Tool, Tool Order, The tool \"company_identifier\" must be called before any other tool.)"
+  ]
+}

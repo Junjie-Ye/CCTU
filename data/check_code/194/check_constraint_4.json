@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 12,
+  "refine_constraint": " You must use the provided tools to answer the question, ensuring that the tool `historical_infrastructure_info` is called before the tool `historical_event_retriever`, and the tool `literary_author_identifier` is called before the tool `historical_residence_finder`. Additionally, the agent may invoke the `advanced_calculator` tool at most 2 times and the `historical_infrastructure_info` tool at most 2 times. The total number of interaction rounds (tool calls) must not exceed 12. In at least one turn, the agent must invoke at least 2 unique tools simultaneously to improve efficiency. Do not answer the question directly; instead, use the tools to derive the answer step by step. The final answer must begin with the exact phrase: \"The number of years passed is: \" followed by the result in numerical form, and must end with a period.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 12"
+  ]
+}

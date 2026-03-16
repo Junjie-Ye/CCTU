@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 1,
+  "max_callTimes": 5,
+  "refine_constraint": " The answer must be between 15 and 20 words (inclusive), end with a period, and use a comma to separate the two country names. Additionally, the response must be formatted as a valid JSON object containing \"countries\" (array of two country names) and \"date\" (string in \"March 2023\" format) fields. The solution must use between 1 and 5 tool calls across all interaction turns, and the total number of interaction rounds must fall within the range of 2 to 5.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "(Interact, Call Times, Range (1 to 5))"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "parallel_groups": [
+    [
+      "language_speaker_estimator",
+      "global_language_statistics_v2"
+    ]
+  ],
+  "refine_constraint": " To answer this, if the agent intends to retrieve speaker data for all three languages, it must invoke both the `language_speaker_estimator` and `global_language_statistics_v2` tools in a single coordinated step. The agent may invoke the 'language_speaker_estimator' tool at most 2 times and the 'global_language_statistics_v2' tool at most 1 time. Your final answer must be a valid JSON object containing the three languages and their speaker counts as key-value pairs, with numerical values formatted as strings to accommodate potential tool output variations.",
+  "constraint": [
+    "Tool",
+    "Tool Parallel",
+    "Simultaneous (The agent must invoke both 'language_speaker_estimator' and 'global_language_statistics_v2' in a single action to retrieve speaker estimates for Mandarin, Spanish, and English concurrently.)"
+  ]
+}

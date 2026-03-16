@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 5,
+  "refine_constraint": " Your answer must end with a period to ensure proper sentence closure, must be formatted using Markdown syntax (including elements like headings, lists, code blocks, or bold/italic text) to enhance clarity and structure, must be obtained through no more than 5 total interaction turns with the tools, and must include the delimiter \"Answer:\" immediately before the boxed date to clearly separate the final result from preceding text.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 5 interaction turns"
+  ]
+}

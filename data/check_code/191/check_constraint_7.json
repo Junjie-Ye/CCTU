@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 0,
+  "max_callTimes": 12,
+  "refine_constraint": " Your final answer must be presented as a valid JSON object with keys \"landmark_age\" and \"mountain_height\" containing their respective values, and a key \"comparison_result\" indicating whether the landmark's age is greater than the mountain's height (true or false). The solution must be derived using no more than 12 total tool calls across all interaction turns. The final response must end with a period to ensure proper sentence closure. The JSON response must use double colons (::) as a delimiter between key-value pairs to ensure clear separation. The response must be between 50 and 150 characters long, ensuring it is concise yet includes all required information. Additionally, the agent must invoke between 2 and 4 unique tool types in at least one interaction turn during the task to ensure efficient parallelism while preventing excessive complexity. Each tool can be used at most 3 times to ensure efficient resource usage and prevent over-reliance on a single tool.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "At most 12 (Sets an upper boundary on the total number of tool calls the agent can execute across all interaction turns.)"
+  ]
+}

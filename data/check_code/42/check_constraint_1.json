@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " The answer must not include any unnecessary punctuation marks such as commas or periods within the list of countries, as it may interfere with clarity and precision. Additionally, the response must end with a period to ensure complete and grammatically correct sentence closure.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

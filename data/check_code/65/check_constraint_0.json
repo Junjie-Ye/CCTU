@@ -1,0 +1,17 @@
+{
+  "max_calls_per_tool": {
+    "island_identifier": 2,
+    "historical_event_locator": 2,
+    "biographical_info_retriever": 2,
+    "highest_mountain_finder": 2,
+    "nearby_mountain_locator": 2,
+    "species_locator": 2,
+    "public_transport_locator": 2
+  },
+  "refine_constraint": " You must obtain all information through tool calls, retrying with corrected parameters if errors occur. Additionally, you may use each unique tool type (e.g., `historical_event_locator` or `highest_mountain_finder`) at most twice during the task. Your final answer must be formatted using Markdown syntax with proper use of bold text for key terms and a dedicated \"Final Answer\" heading. Furthermore, the response must conclude with the exact phrase \"Final Answer: **[the identified mountain]**\" followed by a new line.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "Each tool must be called at most 2 times during the task execution for any individual unique tool type."
+  ]
+}

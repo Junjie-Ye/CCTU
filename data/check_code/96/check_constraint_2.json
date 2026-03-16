@@ -1,0 +1,9 @@
+{
+  "order_constraints": [],
+  "refine_constraint": " You must complete this task within at most 8 interaction turns with the provided tools, and your final answer must be concise, containing at most 150 words. If the agent initiates the analysis using `urban_area_identifier`, it is strictly required to proceed with the following sequence of tool calls: `business_district_locator` -> `business_locator` -> `consulting_client_finder` -> `corporate_housing_locator` -> `rental_price_analyzer`. Furthermore, you must not invoke any single tool more than 2 times during the task. The final answer must be presented in a tabular format, with at least two columns and two rows, clearly separating the key components of the answer (e.g., \"Step\" and \"Result\").",
+  "constraint": [
+    "Tool",
+    "Tool Order",
+    "(Tool, Tool Order, \"The Agent must invoke the tools in the following specific sequence: urban_area_identifier must be called first, followed by business_district_locator, then business_locator, consulting_client_finder, corporate_housing_locator, and finally rental_price_analyzer.\")"
+  ]
+}

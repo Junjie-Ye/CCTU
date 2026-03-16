@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 10,
+  "refine_constraint": " The answer must be obtained by invoking the provided tools and must include at least one interaction turn where at least two unique tool types are invoked simultaneously. If the agent decides to invoke `train_speed_analyzer`, it is strictly required to simultaneously invoke `landmark_information_retriever` within the same interaction turn. Additionally, the solution must be derived within a maximum of 10 interaction turns. At least one interaction turn must involve the concurrent invocation of two distinct tools. The answer must be presented in a tabular format with two columns: \"Entity\" and \"Value\", separated by a delimiter such as a comma or tab. The final response must end with a period.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "(Interact, Round, At most 10)"
+  ]
+}

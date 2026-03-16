@@ -1,0 +1,10 @@
+{
+  "min_round": 10,
+  "max_round": 15,
+  "refine_constraint": " You must use the specified tools to obtain all information and format your response as a valid JSON object containing a \"comparison\" key with a boolean value and a \"reasoning\" key with a string. Additionally, if the agent intends to perform the operations related to identifying the valley and the mine, these must be executed simultaneously in a single action turn using the `natural_feature_locator` and `subterranean_mine_locator` tools, respectively. Usage of the `element_discovery_info` tool is conditional upon the prior execution of the `mineral_finder` tool. The total number of interaction turns must fall between 10 and 15, inclusive.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "(Round, Range, The total number of interaction turns must fall between 10 and 15, inclusive.)"
+  ]
+}

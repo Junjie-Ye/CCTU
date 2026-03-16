@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 100,
+  "max_responseLength": 200,
+  "unit": "words",
+  "refine_constraint": " If the agent intends to proceed with the solution, the following sequence of tools must be strictly adhered to in the specified order: philanthropy_tracker, founder_association_finder, aquarium_species_identifier, marine_ecosystem_locator, marine_biologist_finder, research_location_identifier, cultural_practice_identifier. Additionally, each unique tool can be used at most once in the solution process. The answer must end with a period to ensure proper sentence closure. The response must be organized in a tabular format, using rows and columns to clearly present data, with proper use of headers, consistent column widths, and alignment to enhance clarity and accessibility of the information. The length of the response must be between 100 and 200 words to ensure sufficient detail while remaining concise and focused.",
+  "constraint": [
+    "Response",
+    "Length",
+    "(Response, Length, Range (The length of the agent's response must be between 100 and 200 words to ensure sufficient detail while remaining concise and focused.))"
+  ]
+}

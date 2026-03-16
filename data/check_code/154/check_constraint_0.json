@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "historical_infrastructure_designer_finder": 2
+  },
+  "refine_constraint": " If the agent intends to invoke multiple tools, they must be executed concurrently in a single action, specifically 'population_estimator' and 'river_length_calculator'. If the agent intends to invoke multiple tools, there must be at least one interaction turn where at least 2 unique tool types are invoked. The agent may invoke the 'historical_infrastructure_designer_finder' tool at most 2 times. The response must end with a period to ensure proper sentence closure and must begin with the phrase 'Answer: ' to clearly identify the start of the response.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Tool, Max Calls Per Tool, \"The agent may invoke the 'historical_infrastructure_designer_finder' tool at most 2 times.\")"
+  ]
+}

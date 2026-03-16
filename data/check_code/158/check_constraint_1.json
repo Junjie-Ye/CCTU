@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 6,
+  "max_callTimes": 10,
+  "refine_constraint": " The agent's final response must begin with the phrase \"The answer is (a)\" or \"The answer is (b)\", depending on which value is higher. The agent must use between 6 to 10 tool calls to gather the necessary information and make its determination. The `scientific_discovery_finder` tool must be invoked before the `historical_site_locator` tool, and the `bestselling_book_author_finder` tool must be invoked before the `residence_finder` tool. Additionally, the `enhanced_nearby_national_park_locator` tool must be invoked before the `biodiversity_info_tool`. Furthermore, the agent must invoke at least one pair of the following tools in parallel within a single action step: `scientific_discovery_finder` and `bestselling_book_author_finder`, or `historical_site_locator` and `residence_finder`, or `enhanced_nearby_national_park_locator` and `nearby_mountain_locator`. The agent's final response must end with a period (.) to ensure proper sentence closure, and must be organized in a tabular format with two columns: one for the value being compared (species count or mountain height) and one for the corresponding value. The table should have a header row and be formatted using standard table syntax.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "Interact, Call Times, Range (6 to 10)"
+  ]
+}

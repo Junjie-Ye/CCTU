@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 100,
+  "max_responseLength": 500,
+  "unit": "characters",
+  "refine_constraint": " The AI Agent must invoke lake_shape_identifier and rare_flower_locator in a single action step to improve efficiency, must ensure that at least one interaction turn includes the invocation of 2-3 unique tool types simultaneously, must invoke the `enhanced_calculator` tool, and the final response must be between 100 and 500 characters in length, ensuring it is sufficiently detailed but concise.",
+  "constraint": [
+    "Response",
+    "Length",
+    "Range (The agent's final response must be between 100 and 500 characters, ensuring it is sufficiently detailed but concise.)"
+  ]
+}

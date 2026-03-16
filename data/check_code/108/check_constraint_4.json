@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 50,
+  "max_responseLength": 150,
+  "unit": "characters",
+  "refine_constraint": " You must answer the question using at most 4 interaction turns and at most 4 total tool calls. Your response must be between 50 and 150 characters in length. Your response must be formatted using **Markdown** syntax, ensuring proper use of elements such as headings, lists, bold/italic text, links, and code blocks to enhance readability and structure. Additionally, the final result must be explicitly indicated by starting the response with the identifier \"Final Answer: \".",
+  "constraint": [
+    "Response",
+    "Length",
+    "(\"Response\", \"Length\", \"Range (50 to 150)\")"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 0,
+  "max_responseLength": 20,
+  "unit": "words",
+  "refine_constraint": " Your response must end with the country name enclosed in double asterisks to indicate the final answer and must end with a period (.) to ensure proper sentence closure. Additionally, **if the agent intends to invoke the geopolitical_event_finder tool**, the maximum number of invocations must not exceed three, and the final answer must be concise, containing at most 20 words.",
+  "constraint": [
+    "Response",
+    "Length",
+    "At most 20 words to ensure concise and direct answers"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "order_constraints": [
+    [
+      "literary_connection_finder",
+      "academic_relationship_finder"
+    ]
+  ],
+  "refine_constraint": " The answer must be formatted using Markdown syntax, including elements such as headings, lists, bold/italic text, links, and code blocks to enhance readability and structure. Additionally, the response must be between 300 and 500 words in length to ensure sufficient detail while maintaining conciseness. If the agent intends to invoke the `academic_relationship_finder`, the `literary_connection_finder` must strictly be executed beforehand. The `literary_connection_finder` must not be invoked more than two times during this task.",
+  "constraint": [
+    "Tool",
+    "Tool Order",
+    "The tool 'literary_connection_finder' must be called before the tool 'academic_relationship_finder' to ensure the author's identity is established before locating the manuscript."
+  ]
+}

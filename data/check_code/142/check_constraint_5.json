@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " If the agent intends to use the historical_event_date_finder, it must execute two distinct function calls within a single action step. Additionally, the historical_event_date_finder tool may be called at most 2 times during the entire task execution. Your final response must start with the exact phrase \"The number of days is\" and end with a period.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

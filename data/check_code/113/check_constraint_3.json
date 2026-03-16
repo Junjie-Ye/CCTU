@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " Your response must be between 50 and 150 characters in length, including spaces and punctuation. Additionally, you may call the `historical_event_tool` at most 2 times during the task. Ensure that your final answer ends with a period.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

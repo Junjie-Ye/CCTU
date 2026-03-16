@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 150,
+  "max_responseLength": "inf",
+  "unit": "characters",
+  "refine_constraint": "Rank from earliest to latest: (a) the construction date of the architectural wonder located in the city with ancient aqueducts, (b) the publication year of the novel by the author known for exploring human nature in his works, and (c) the date the first manned spacecraft landed on the satellite facing our planet. You must complete this task within a maximum of 15 interaction turns to ensure efficiency. Additionally, your final response must be at least 150 characters in length to ensure sufficient detail and completeness. Furthermore, you must ensure that in any single interaction turn, you invoke at most 4 unique tool types simultaneously. Ensure that the final response ends with a period to maintain proper sentence closure.",
+  "constraint": [
+    "Response",
+    "Length",
+    "(Response, Length, At least 150 characters to ensure sufficient detail and completeness in the final response.)"
+  ]
+}

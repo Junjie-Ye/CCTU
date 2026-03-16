@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 3,
+  "refine_constraint": " You must obtain all information through tool calls, ensure that no more than 3 rounds of interaction are used, limit each unique tool to a maximum of one invocation in the process, and include the phrase '---' in your response to clearly separate the dates of the two events.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 3 rounds of interaction are allowed to obtain the required information."
+  ]
+}

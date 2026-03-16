@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 8,
+  "refine_constraint": " Your response must be derived by interacting with the provided tools, must not exceed 8 interaction rounds, must format the answer as a valid JSON object containing the key 'reelected_candidate' with the candidate's name as the value, must ensure the natural language explanation ends with a period to ensure proper sentence closure, and must limit calls to the election_result_analyzer tool to a maximum of 3 times.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 8 interaction rounds with the tools must be used to arrive at the final answer"
+  ]
+}

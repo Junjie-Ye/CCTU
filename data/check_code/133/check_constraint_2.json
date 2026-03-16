@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " The answer must be formatted as a valid JSON object containing the two distances in miles: one for the B-50 Superfortress Lucky Lady II's flight and one for the California Zephyr train route, with the keys \"flight_distance\" and \"train_distance\", respectively. The agent's response must include the identifier \"DISTANCE_SEPARATOR\" after the flight_distance value to clearly separate the two distances in the JSON output.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

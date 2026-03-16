@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 500,
+  "max_responseLength": 1000,
+  "unit": "characters",
+  "refine_constraint": " The answer must be formatted using Markdown syntax to ensure proper use of elements such as headings, lists, bold/italic text, and code blocks to enhance readability and structure. The tool 'orchestra_conductor_finder' can be used at most once. The tool 'regional_cuisine_explorer' can be used at most once. The final answer must start with the identifier \"**Final Answer:**\" followed by a colon and a space. The final answer must end with a period. The response must be between 500 and 1000 characters in length, measured by character count, to ensure it is concise yet sufficiently detailed.",
+  "constraint": [
+    "Response",
+    "Length",
+    "(Response, Length, The response must be between 500 and 1000 characters in length, measured by character count, to ensure it is concise yet sufficiently detailed.)"
+  ]
+}

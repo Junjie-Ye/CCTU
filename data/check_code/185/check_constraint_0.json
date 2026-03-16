@@ -1,0 +1,14 @@
+{
+  "order_constraints": [
+    [
+      "historical_residence_finder",
+      "ancient_monument_finder"
+    ]
+  ],
+  "refine_constraint": " The `ancient_monument_finder` tool can only be legitimately invoked if `historical_residence_finder` has already been executed. The building_height_retriever tool can be used at most once. Your response must conclude with a definitive statement indicating which option is taller and the specific heights of both options in meters. Additionally, your response must end with a period to ensure proper sentence closure.",
+  "constraint": [
+    "Tool",
+    "Tool Order",
+    "(Main Category, Tool Order, the `ancient_monument_finder` tool can only be legitimately invoked if `historical_residence_finder` has already been executed.)"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 18,
+  "max_responseLength": 20,
+  "unit": "words",
+  "refine_constraint": " Your answer must use between 18 and 20 words, involve at least 1 but no more than 3 total tool calls to external functions, be formatted using Markdown syntax with proper use of elements like headings, bold/italic text, and lists, and explicitly include the wind speed value in bold using Markdown (e.g., **165 mph**).",
+  "constraint": [
+    "Response",
+    "Length",
+    "\"Range (18, 20 words)\""
+  ]
+}

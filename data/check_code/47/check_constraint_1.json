@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 0,
+  "max_callTimes": 5,
+  "refine_constraint": " Your response must be between 10 and 30 words in length to ensure conciseness while including the exact casualty count. Additionally, the agent must use an appropriate number of tool calls to arrive at the answer, the total number of interaction turns must not exceed a reasonable limit, and the final answer must be formatted as a valid JSON object with a key 'casualties' containing the exact number of fatalities.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "(Interact, Call Times, At most 5)"
+  ]
+}

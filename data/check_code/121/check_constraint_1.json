@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "historical_event_information_tool": 2
+  },
+  "refine_constraint": " You must use the provided tools to retrieve the information. The total number of tool calls must not exceed 2. The 'historical_event_information_tool' must be limited to a single call. If the agent intends to invoke the 'historical_event_information_tool' for multiple events, it must be executed in a single action step. Complete the task within a total of 3 to 5 interaction rounds and present your final answer in a tabular format with columns for the event names, locations, casualty numbers, and the difference in casualties.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Tool, Max Calls Per Tool, The agent is limited to at most 1 call to the tool 'historical_event_information_tool'.)"
+  ]
+}

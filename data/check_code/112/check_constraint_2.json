@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "historical_event_retriever": 2
+  },
+  "refine_constraint": " You must use the available tools to answer this question, ensure that the total number of tool calls made does not exceed 2, complete the task within at most 3 interaction turns, no tool may be invoked more than 2 times, the final response must end with a period, include the phrase 'Total Casualties:' immediately before stating the sum, the final response must be between 50 and 100 characters in length to ensure sufficient detail and clarity, and if the agent intends to invoke the 'historical_event_retriever', it must be executed for two distinct historical events in a single step.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "At most 2 for the 'historical_event_retriever' tool"
+  ]
+}

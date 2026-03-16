@@ -1,0 +1,11 @@
+{
+  "min_parallelCallTypes": 2,
+  "max_parallelCallTypes": "inf",
+  "unit": "num",
+  "refine_constraint": " If the agent intends to use the historical_event_date_finder, it must execute two distinct function calls within a single action step. Additionally, the historical_event_date_finder tool may be called at most 2 times during the entire task execution. Your final response must start with the exact phrase \"The number of days is\" and end with a period.",
+  "constraint": [
+    "Interact",
+    "Parallel Calls",
+    "At least (Mandates that there must be at least one interaction turn during the entire task where the agent invokes at least this number of unique tool types simultaneously.) 2"
+  ]
+}

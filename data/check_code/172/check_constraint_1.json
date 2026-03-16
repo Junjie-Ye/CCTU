@@ -1,0 +1,14 @@
+{
+  "order_constraints": [
+    [
+      "author_lookup",
+      "individual_location_finder"
+    ]
+  ],
+  "refine_constraint": " The AI Agent must complete the task using at most 15 tool calls. If the agent intends to invoke the `individual_location_finder` tool, it must strictly ensure that `author_lookup` has been executed beforehand. Any utilization of these tools must be preceded by the prior retrieval and validation of the necessary data inputs. The final answer must begin with the identifier \"Final Answer:\" to ensure a clear and recognizable format.",
+  "constraint": [
+    "Tool",
+    "Tool Order",
+    "If the agent intends to invoke the `individual_location_finder` tool, it must strictly ensure that `author_lookup` has been executed beforehand to establish the subject identity."
+  ]
+}

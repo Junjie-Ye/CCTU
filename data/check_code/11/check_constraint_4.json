@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 0,
+  "max_callTimes": 3,
+  "refine_constraint": " Your response must be formatted entirely using Markdown syntax, including appropriate use of bold, headings, or other elements to clearly present the answer. Additionally, ensure the response ends with a period to maintain proper sentence closure. The response must begin with the phrase \"**The answer is: **\" followed by the answer in bold formatting to ensure a clear and recognizable opening. You may use each tool type at most 2 times during your problem-solving process to ensure efficient use of available functions. Importantly, you must complete this task with a total of no more than 3 tool calls across all interaction turns to demonstrate efficient problem-solving.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "Interact, Call Times, At most 3"
+  ]
+}

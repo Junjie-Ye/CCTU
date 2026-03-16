@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 150,
+  "max_responseLength": 300,
+  "unit": "characters",
+  "refine_constraint": " The answer must be formatted using Markdown syntax to ensure proper use of elements such as headings, lists, bold/italic text, links, and code blocks to enhance readability and structure. The response must exclude the use of exclamation marks. Additionally, the solution must include at least one interaction turn where the Agent invokes at least two unique tool type simultaneously with another unique tool type, the total number of tool calls used to solve the problem must not exceed 10. If the agent intends to invoke tools, any utilization of the 'biologist_specialization_finder' must be preceded by the 'habitat_species_associator', and any use of the 'biographical_affiliation_finder' must follow the 'biologist_specialization_finder'. And 'biologist_specialization_finder' can be called at most once. If the agent intends to execute the 'habitat_species_associator' and 'historical_landmark_finder', they must be invoked in a single action step. The final response must be between 150 and 300 words in length to ensure concise and complete communication of the solution.",
+  "constraint": [
+    "Response",
+    "Length",
+    "The length of the final response must be between 150 and 300 words to ensure concise and complete communication of the solution."
+  ]
+}

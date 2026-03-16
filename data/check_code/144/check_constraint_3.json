@@ -1,0 +1,10 @@
+{
+  "min_round": 1,
+  "max_round": 2,
+  "refine_constraint": " The agent must invoke the `merged_event_data_retriever` function twice in a single round. The final response must be between 50 and 200 characters in length to ensure clarity and conciseness, and must begin with the phrase \"Casualty difference: \" to ensure a clear and recognizable format for the final answer. Additionally, the total number of interaction turns the agent must take to complete the task must fall within the range of 1 to 2, inclusive, to ensure efficiency and prevent infinite loops.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "(Interact, Round, Range (The total number of interaction turns the agent must take to complete the task must fall within the range of 1 to 2, inclusive, to ensure efficiency and prevent infinite loops.))"
+  ]
+}

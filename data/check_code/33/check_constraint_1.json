@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 40,
+  "max_responseLength": 60,
+  "unit": "characters",
+  "refine_constraint": " The answer must begin with the phrase 'The conviction date for Radislav Krstić is' and must be between 40 and 60 characters in length.",
+  "constraint": [
+    "Response",
+    "Length",
+    "The length of the agent's entire response must be between 40 and 60 characters, measured in characters, to ensure conciseness and completeness."
+  ]
+}

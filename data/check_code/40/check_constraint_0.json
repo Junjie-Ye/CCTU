@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 1,
+  "max_callTimes": 3,
+  "refine_constraint": " You must solve this by calling the provided tools, the total number of tool calls you make must be between 1 and 3, you must use at most one call to the `historical_event_retriever` tool, your final answer must be formatted using Markdown syntax, including proper use of bold text for the date (e.g., **target date**) to highlight the ruling date, your response must end with a period, and your final response must not exceed 100 characters to ensure clarity and brevity.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "Call Times - Range (The total number of tool calls the agent must execute must be between 1 and 3, inclusive.)"
+  ]
+}

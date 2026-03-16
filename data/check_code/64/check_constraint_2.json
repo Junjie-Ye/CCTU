@@ -1,0 +1,21 @@
+{
+  "max_calls_per_tool": {
+    "country_sport_identifier": 2,
+    "quarry_locator": 2,
+    "mountain_quarry_locator": 2,
+    "local_culinary_explorer": 2,
+    "literary_author_finder": 2,
+    "architect_material_finder": 2,
+    "national_symbol_finder": 2,
+    "stone_origin_locator": 2,
+    "culinary_creation_finder": 2,
+    "artifact_discovery_finder": 2,
+    "individual_origin_identifier": 2
+  },
+  "refine_constraint": " Your answer must be at least 200 characters long to ensure it includes a detailed explanation of the reasoning process and the sequence of tool calls used to arrive at the conclusion. Additionally, the solution must not require more than 10 tool calls in total to ensure efficiency and prevent unnecessary complexity. Furthermore, each unique tool may be called at most 2 times to ensure a balanced use of available functions and prevent overreliance on any single tool.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Tool, Max Calls Per Tool, \"Each unique tool may be called at most 2 times to ensure a balanced use of available functions and prevent overreliance on any single tool.\")"
+  ]
+}

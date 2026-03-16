@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 7,
+  "max_callTimes": 12,
+  "refine_constraint": " You must solve this question by interacting with the provided tools, ensuring that the total number of interaction turns falls within a range of 8 to 13 (inclusive), and that the total number of tool calls executed by the agent is within the range of 7 to 12. Your final response must include the identifiers [Chain of Relationships] and [Final Answer] to separate the explanation of the reasoning from the final answer.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "The total number of tool calls the agent must execute must be within the range of 7 to 12."
+  ]
+}

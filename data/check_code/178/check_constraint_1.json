@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 16,
+  "refine_constraint": " The AI agent must obtain all information by calling the provided tools, and it is restricted to at most 2 calls per tool for each of the following tools: event_locator, museum_exhibit_locator, historical_artisan_finder, historical_site_finder, altitude_finder, bird_characteristic_finder, car_design_influence_finder, car_specification_retriever. Additionally, the AI agent must complete the task in at most 16 interaction rounds and must not exceed a total of 12 tool calls across all rounds. The response must end with the identifier \"[Answer]\".",
+  "constraint": [
+    "Interact",
+    "Round",
+    "(Interact, Round, At most 16)"
+  ]
+}

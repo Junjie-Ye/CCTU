@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "cultural_info_retriever": 2
+  },
+  "refine_constraint": " The tool `cultural_geography_locator` must be called before `local_band_finder`, `music_origin_identifier`, `choreographer_finder`, `entity_location_finder`, and `cultural_info_retriever`. The total number of interaction turns must be between 6 and 8 (inclusive). The `cultural_info_retriever` tool must be used at most 2 times. Your response must end with a period. Your response must be at least 50 words and at most 150 words. Additionally, your final response must be structured as a valid JSON object with a key \"traditional_dance\" containing the answer as its value.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "The `cultural_info_retriever` tool must be used at most 2 times to ensure efficiency and prevent excessive calls."
+  ]
+}

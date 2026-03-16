@@ -1,0 +1,22 @@
+{
+  "max_calls_per_tool": {
+    "production_data_aggregator": 1,
+    "research_location_identifier": 1,
+    "historical_site_locator": 1,
+    "population_data_retriever": 1,
+    "restaurant_locator": 1,
+    "individual_location_identifier": 1,
+    "biographical_info_extractor": 1,
+    "chef_dish_associator": 1,
+    "tourist_statistics_aggregator": 1,
+    "island_feature_locator": 1,
+    "protected_area_info": 1,
+    "factory_locator": 1
+  },
+  "refine_constraint": " If the agent intends to use the `chef_dish_associator` tool, it is strictly required to first call the `restaurant_locator` If the agent invokes both island_feature_locator and restaurant_locator, these tools must be executed simultaneously in a single action step. The total number of tool calls the agent can execute across all interaction turns must not exceed 15. At least two distinct tools must be invoked in at least one interaction turn. The response must end with a period to ensure proper sentence closure and also end with the phrase \"Tourist comparison completed.\"",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Tool, Max Calls Per Tool, \"Each tool can be invoked at most once.\")"
+  ]
+}

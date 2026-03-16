@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 150,
+  "max_responseLength": 200,
+  "unit": "words",
+  "refine_constraint": " The `museum_event_locator` must be called before `museum_artwork_locator`. The total number of interaction rounds must be between 10 and 12, inclusive. The total number of tool calls the agent can execute must be between 9 and 12. The agent's response must start with the phrase \"The sum of the founding year and the debut year is:\" and must include the keyword \"Academy founding year:\" before specifying the academy's founding year and the keyword \"Singer debut year:\" before specifying the singer's debut year, and must end with the phrase \"calculated using the advanced_arithmetic_calculator.\" Furthermore, the total length of the agent's response must be between 150 and 200 words. The agent's response must be formatted in Markdown syntax, including a heading for the final result, bold text for the keywords \"Academy founding year:\" and \"Singer debut year:\", and a clearly labeled section for the final calculation. Additionally, the agent must perform at least one interaction turn where it invokes at least two unique tool type simultaneously. The agent must ensure that the `comprehensive_biographical_info_retriever` is called at most 2 times.",
+  "constraint": [
+    "Response",
+    "Length",
+    "The total length of the agent's response must be between 150 and 200 words."
+  ]
+}

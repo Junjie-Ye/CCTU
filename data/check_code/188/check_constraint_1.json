@@ -1,0 +1,14 @@
+{
+  "parallel_groups": [
+    [
+      "biographical_info_retriever",
+      "invention_info_retriever"
+    ]
+  ],
+  "refine_constraint": " The answer must be concise and must not exceed 150 words. Additionally, if the agent chooses to invoke a biographical_info_retriever, then an invention_info_retriever must be invoked simultaneously in the same action instruction. At least 2 unique tool types must be invoked simultaneously in one interaction turn during the task. The answer must end with a period to ensure proper sentence closure.",
+  "constraint": [
+    "Tool",
+    "Tool Parallel",
+    "\"The agent must invoke the biographical_info_retriever and invention_info_retriever tools in the same action instruction to obtain information about the inventor of the modern submarine and their upbringing simultaneously.\""
+  ]
+}

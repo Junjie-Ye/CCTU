@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 10,
+  "max_responseLength": 50,
+  "unit": "words",
+  "refine_constraint": " Your response must include the final numerical answer enclosed within a LaTeX-style box using the format $\\boxed{X}$, where X is the calculated value in million, must be between 10 and 50 words in length to ensure conciseness while providing necessary details, must end with a period to ensure proper sentence closure, and must be structured as a valid JSON object with key-value pairs, correct use of commas, colons, and quotation marks, and must be successfully parseable without errors.",
+  "constraint": [
+    "Response",
+    "Length",
+    "Range (The agent's entire response must be between 10 and 50 words to ensure conciseness while providing necessary details.)"
+  ]
+}

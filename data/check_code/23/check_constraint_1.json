@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "geopolitical_event_finder": 3
+  },
+  "refine_constraint": " Your response must end with the country name enclosed in double asterisks to indicate the final answer and must end with a period (.) to ensure proper sentence closure. Additionally, **if the agent intends to invoke the geopolitical_event_finder tool**, the maximum number of invocations must not exceed three, and the final answer must be concise, containing at most 20 words.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "geopolitical_event_finder: At most 3"
+  ]
+}

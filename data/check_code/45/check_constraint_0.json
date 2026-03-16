@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "historical_event_finder": 1
+  },
+  "refine_constraint": " You must ensure that the 'historical_event_finder' tool is used no more than once during your solution process, and you must complete your response within at most 2 interaction turns (including both tool calls and final answers).",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "The 'historical_event_finder' tool may be used at most 1 time during the solution process."
+  ]
+}

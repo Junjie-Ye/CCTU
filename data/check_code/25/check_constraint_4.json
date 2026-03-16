@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 20,
+  "max_responseLength": 100,
+  "unit": "characters",
+  "refine_constraint": " You must use the provided tools to obtain all information, the agent may invoke the 'historical_event_retriever' function at most 2 times during the process, the final answer must end with a period, the response must be formatted using Markdown syntax with proper use of elements like bold text, headings, or code blocks, the response must explicitly include the keyword \"**Winter Olympics**\" in bold to denote the specific event being referenced, and the answer must be between 20 and 100 characters in length (character count excludes spaces).",
+  "constraint": [
+    "Response",
+    "Length",
+    "The answer must be between 20 and 100 characters in length, measured by character count excluding spaces"
+  ]
+}

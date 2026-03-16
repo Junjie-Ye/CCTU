@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 10,
+  "max_responseLength": 20,
+  "unit": "words",
+  "refine_constraint": " You must obtain the answer by calling the provided tools. If a tool call fails, you may retry, but the total number of tool calls across all interaction turns must not exceed 3. The final answer must be enclosed in a box (e.g., $$\\n\\\\boxed{\\\\text{...}}\\n$$) and must be between 10 and 20 words in length.",
+  "constraint": [
+    "Response",
+    "Length",
+    "(Response, Length, Must be between 10 and 20 words in length)"
+  ]
+}

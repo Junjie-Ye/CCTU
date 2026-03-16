@@ -1,0 +1,11 @@
+{
+  "min_parallelCallTypes": 2,
+  "max_parallelCallTypes": "inf",
+  "unit": "num",
+  "refine_constraint": " The answer must be at least 150 characters to ensure sufficient detail, including both wingspan measurements and the difference. **If the agent intends to retrieve the specifications for both aircraft models**, the **aircraft_specifications_retriever** tool must be invoked twice **in a single parallel action**. Additionally, the agent must execute at least one interaction turn where it invokes at least two tool calls simultaneously during the task. The response must explicitly separate the wingspan values and the difference using bold formatting (**...**) to highlight the numerical values and the result, ensuring the keywords 'wingspan', 'difference', and 'centimeters' are included in their respective sections. The entire response must be formatted using Markdown syntax, with proper use of headings, lists, and bold/italic text to enhance readability. Importantly, the **aircraft_specifications_retriever** tool must not be invoked more than 2 times in total during the task.",
+  "constraint": [
+    "Interact",
+    "Parallel Calls",
+    "(Interact, Parallel Calls, \"At least 2 (Mandates that there must be at least one interaction turn during the entire task where the agent invokes at least this number of tool calls simultaneously.)\")"
+  ]
+}

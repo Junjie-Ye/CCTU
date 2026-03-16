@@ -1,0 +1,22 @@
+{
+  "max_calls_per_tool": {
+    "landmark_identifier": 1,
+    "music_metadata_retriever": 1,
+    "city_attribute_finder": 1,
+    "monument_info_retriever": 1,
+    "event_history_retriever": 1,
+    "district_activity_analyzer": 1,
+    "geo_political_analyzer": 1,
+    "advanced_arithmetic_calculator": 1,
+    "tallest_statue_finder": 1,
+    "nearby_venue_locator": 1,
+    "ocean_trench_discovery_finder": 1,
+    "nearest_desert_locator": 1
+  },
+  "refine_constraint": " Each unique tool can be invoked at most once during the solution process. The total number of characters in the final response must be between 150 and 300 characters to ensure it is concise yet comprehensive.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Tool, Max Calls Per Tool, \"Each unique tool can be invoked at most once during the solution process.\")"
+  ]
+}

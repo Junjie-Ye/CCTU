@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "historical_weather_data_retriever": 1
+  },
+  "refine_constraint": " The response must end with a period and must conclude with the identifier \"km/h\". Additionally, the agent must call the historical_weather_data_retriever tool at most once.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "The agent must call the historical_weather_data_retriever tool at most once to ensure efficiency and prevent over-reliance on a single tool."
+  ]
+}

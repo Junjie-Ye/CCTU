@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 2,
+  "refine_constraint": " The answer must end with a period and must not contain any other punctuation marks. Additionally, you are allowed to make at most 2 interaction turns to find the answer. Ensure your final response is between 50 and 100 characters in length, maintaining conciseness and completeness. Your response must also begin with the phrase \"Reelection Date:\".",
+  "constraint": [
+    "Interact",
+    "Round",
+    "The agent is allowed to make at most 2 interaction turns."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 0,
+  "max_responseLength": 15,
+  "unit": "words",
+  "refine_constraint": " Your response must begin with the phrase \"The local flower is\" followed by the identified flower name in a single sentence, must be at most 15 words in length to ensure conciseness, and must end with a period.",
+  "constraint": [
+    "Response",
+    "Length",
+    "(Response, Length, \"At most 15 words (measured in words) to ensure the answer is a single concise sentence as required by the question format.\")"
+  ]
+}

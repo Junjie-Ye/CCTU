@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 6,
+  "refine_constraint": " The answer must be obtained using the provided tools. At most 6 interaction rounds are allowed to complete the task, and the solution must involve between 2 and 6 tool calls. If the agent invokes the timezone_finder tool, it must first call the historical_event_locator tool. Additionally, the `historical_event_locator` may be called at most 2 times, and the `timezone_finder` may be called at most 2 times. The final answer must be formatted as a valid JSON object with the time zone details as the value for the key \"timezone\", the JSON response must end with a period, and the response must include the delimiter \"###\" before the JSON answer to clearly separate the explanation from the JSON result.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 6 interaction rounds are allowed to answer the question"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 2,
+  "max_callTimes": 2,
+  "refine_constraint": " The solution must consist of exactly two distinct tool invocations, with each interaction turn restricted to a single unique tool type, and the entire process must be completed within one or two interaction turns. The final response must be between 100 and 150 characters in length (including spaces and numbers).",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "Total tool calls must be within the range of 2 to 2."
+  ]
+}

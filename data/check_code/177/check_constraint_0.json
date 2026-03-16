@@ -1,0 +1,14 @@
+{
+  "order_constraints": [
+    [
+      "historical_filmmaker_search",
+      "residence_locator"
+    ]
+  ],
+  "refine_constraint": " The answer must be concise and contain only the numeric result, with a length between 3 and 10 characters. If the agent intends to invoke the `residence_locator` tool, the `historical_filmmaker_search` must strictly be executed beforehand. Additionally, each of the following tools may only be used at most once: historical_filmmaker_search, residence_locator, cultural_geography_mapper, historical_monument_counter, landmark_info_retriever, and advanced_calculator.",
+  "constraint": [
+    "Tool",
+    "Tool Order",
+    "If you use the `residence_locator` tool, ensure the `historical_filmmaker_search` is called beforehand."
+  ]
+}

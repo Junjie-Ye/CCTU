@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "historical_event_date_finder": 1
+  },
+  "refine_constraint": " You must perform at least one interaction with the provided tools to find the answer. The response must be at least 50 words to ensure sufficient detail and completeness. Additionally, the total number of tool calls across all interaction turns must not exceed 2. Furthermore, any tool used for historical event date queries must be called no more than once.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "At most 1 call to the 'historical_event_date_finder' tool (Sets a strict, tool-specific upper bound on the number of times the agent is permitted to invoke the 'historical_event_date_finder' tool.)"
+  ]
+}

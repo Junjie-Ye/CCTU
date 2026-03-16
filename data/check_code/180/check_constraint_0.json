@@ -1,0 +1,15 @@
+{
+  "parallel_groups": [
+    ["museum_locator", "climate_data_retriever"],
+    ["museum_locator", "biodiversity_database"],
+    ["climate_data_retriever", "biodiversity_database"],
+    ["museum_locator", "climate_data_retriever", "biodiversity_database"]
+  ],
+  "parse_error": true,
+  "refine_constraint": "Rank the following from smallest to largest: (a) the annual number of visitors to the museum in the city where the inventor of the telephone was born, (b) the amount of rainfall in millimeters over a year in the region famous for its vineyards, and (c) the number of species inhabiting the coral reef known for its biodiversity. The answer must end with a period. The AI Agent must use the provided tools. If the agent intends to invoke tools, at least two must be selected in a single action from (museum_locator, climate_data_retriever, and biodiversity_database). The task must be completed within a maximum of 10 interaction turns. All information must be obtained via tool calls, and the Agent must self-correct if any tool call fails.",
+  "constraint": [
+    "Tool",
+    "Tool Parallel",
+    "The agent must invoke at least two of the following tools in a single action: museum_locator, climate_data_retriever, and biodiversity_database."
+  ]
+}

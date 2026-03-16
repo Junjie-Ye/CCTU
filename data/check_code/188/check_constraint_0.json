@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 0,
+  "max_responseLength": 150,
+  "unit": "words",
+  "refine_constraint": " The answer must be concise and must not exceed 150 words. Additionally, if the agent chooses to invoke a biographical_info_retriever, then an invention_info_retriever must be invoked simultaneously in the same action instruction. At least 2 unique tool types must be invoked simultaneously in one interaction turn during the task. The answer must end with a period to ensure proper sentence closure.",
+  "constraint": [
+    "Response",
+    "Length",
+    "(Main Category, Length, At most 150 words)"
+  ]
+}

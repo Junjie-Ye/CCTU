@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 6,
+  "max_callTimes": 8,
+  "refine_constraint": " The response must include the exact phrases \"The area of the national reserve is **[value]** [unit]\" and \"The book has **[value]** pages\" to clearly separate the two values, followed by the final answer in bold using the format \"**Answer:** (a)/(b)\". The response must be formatted in Markdown syntax, including proper use of bold formatting, headings, and paragraph structure to ensure clarity and visual appeal. You must include at least one interaction turn where you invoke at least 2 unique tools simultaneously. Additionally, the total number of interaction turns must be in the range of 5 to 10 (inclusive), the total number of tool calls must be in the range of 6 to 8 (inclusive), and the response must end with a period to ensure proper sentence closure. If the agent intends to invoke the 'historical_experiment_locator' tool**, the 'historical_invention_info' tool must be executed beforehand.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "The total number of tool calls must be in the range of 6 to 8 (inclusive)"
+  ]
+}

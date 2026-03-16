@@ -1,0 +1,11 @@
+{
+  "min_parallelCallTypes": 2,
+  "max_parallelCallTypes": "inf",
+  "unit": "num",
+  "refine_constraint": " Ensure that in at least one interaction turn during the entire task, the agent invokes at least two tool calls simultaneously. The final response must end with a period to ensure proper sentence closure and must include a bullet point (•) to separate the magnification ratio of the Leica Noctilux-M 50mm f/0.95 from the magnification ratio of the Nikon NIKKOR Z 58mm f/0.95 S in the final response.",
+  "constraint": [
+    "Interact",
+    "Parallel Calls",
+    "(Interact, Parallel Calls, At least one interaction turn during the entire task must involve invoking at least two tool calls simultaneously.)"
+  ]
+}

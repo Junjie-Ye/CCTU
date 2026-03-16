@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 0,
+  "max_responseLength": 150,
+  "unit": "words",
+  "refine_constraint": " You must complete this task within at most 8 interaction turns with the provided tools, and your final answer must be concise, containing at most 150 words. If the agent initiates the analysis using `urban_area_identifier`, it is strictly required to proceed with the following sequence of tool calls: `business_district_locator` -> `business_locator` -> `consulting_client_finder` -> `corporate_housing_locator` -> `rental_price_analyzer`. Furthermore, you must not invoke any single tool more than 2 times during the task. The final answer must be presented in a tabular format, with at least two columns and two rows, clearly separating the key components of the answer (e.g., \"Step\" and \"Result\").",
+  "constraint": [
+    "Response",
+    "Length",
+    "At most 150 words"
+  ]
+}

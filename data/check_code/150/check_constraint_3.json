@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "enhanced_calculator": 1
+  },
+  "refine_constraint": " The AI Agent must invoke lake_shape_identifier and rare_flower_locator in a single action step to improve efficiency, must ensure that at least one interaction turn includes the invocation of 2-3 unique tool types simultaneously, must invoke the `enhanced_calculator` tool, and the final response must be between 100 and 500 characters in length, ensuring it is sufficiently detailed but concise.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Tool, Max Calls Per Tool, The AI Agent must invoke the `enhanced_calculator` tool at most once during the solution process.)"
+  ]
+}

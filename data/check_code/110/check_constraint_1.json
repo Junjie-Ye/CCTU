@@ -1,0 +1,14 @@
+{
+  "max_calls_per_tool": {
+    "element_discovery_counter": 1,
+    "historical_event_finder": 1,
+    "merged_event_date_finder": 1,
+    "historical_event_search": 1
+  },
+  "refine_constraint": " You must obtain all information through tool calls, ensure that no more than 3 rounds of interaction are used, limit each unique tool to a maximum of one invocation in the process, and include the phrase '---' in your response to clearly separate the dates of the two events.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "Each unique tool can be invoked at most once in the process."
+  ]
+}

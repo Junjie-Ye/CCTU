@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 0,
+  "max_callTimes": 5,
+  "refine_constraint": " Your answer must end with a period to ensure proper sentence closure. Additionally, you may make at most 5 tool calls in total across all interaction turns, and the game_release_date_finder tool may be used at most 2 times during the process. The response must explicitly separate platform names with a hyphen when listing multiple platforms (e.g., \"Windows-Xbox 360\").",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "At most 5 (Sets an upper boundary on the total number of tool calls the agent can execute across all interaction turns.)"
+  ]
+}

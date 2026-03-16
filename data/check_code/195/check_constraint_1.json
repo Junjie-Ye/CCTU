@@ -1,0 +1,15 @@
+{
+  "order_constraints": [
+    [
+      "historical_landmark_locator",
+      "bridge_information_finder",
+      "landmark_info_provider"
+    ]
+  ],
+  "refine_constraint": "Rank the following from highest to lowest: (a) the length of the longest bridge in the city with the oldest library in Europe, (b) the duration of the longest-running festival in the country of the artist whose paintings feature a starry night, and (c) the capacity of the stadium in the city of the chef famous for inventing a popular street food. The answer must be at least 200 words to ensure detailed explanations of the ranking process and data sources used. For part (a), if the agent intends to invoke the `bridge_information_finder`, the `historical_landmark_locator` must be executed beforehand, and the `landmark_info_provider` must follow. Additionally, the total number of interaction turns (i.e., tool calls and responses) must be between 8 and 12, inclusive, to ensure a balanced approach to problem-solving efficiency and thoroughness. Finally, the entire response must be formatted using **Markdown syntax** with proper use of headings, lists, bold/italic text, and other elements to enhance readability and structure.",
+  "constraint": [
+    "Tool",
+    "Tool Order",
+    "(Main Category, Tool, Sequential (Tool Order: If using `bridge_information_finder` for part (a), it must be invoked after `historical_landmark_locator` and before `landmark_info_provider` to ensure correct data dependency for bridge length retrieval.))"
+  ]
+}

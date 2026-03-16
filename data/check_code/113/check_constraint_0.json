@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 50,
+  "max_responseLength": 150,
+  "unit": "characters",
+  "refine_constraint": " Your response must be between 50 and 150 characters in length, including spaces and punctuation. Additionally, you may call the `historical_event_tool` at most 2 times during the task. Ensure that your final answer ends with a period.",
+  "constraint": [
+    "Response",
+    "Length",
+    "The agent's entire response must be between 50 and 150 characters in length, measured in characters including spaces and punctuation."
+  ]
+}

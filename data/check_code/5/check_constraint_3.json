@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "event_outcome_retriever": 1
+  },
+  "refine_constraint": " Your response must be a valid JSON object containing only a key 'president' with the winning candidate's name as the value. The 'president' value must not include any punctuation marks at the end. The JSON response must contain between 30 and 50 characters to ensure sufficient detail while maintaining conciseness. You are allowed at most 3 interaction rounds to solve this task, after which you must provide the final answer. Additionally, the event_outcome_retriever tool may only be used once during the solution process. The total number of tool calls across all interaction turns must be between 1 and 3 (inclusive).",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "The event_outcome_retriever tool can be used at most once."
+  ]
+}

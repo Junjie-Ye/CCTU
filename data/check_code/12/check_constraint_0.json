@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 10,
+  "max_responseLength": 30,
+  "unit": "words",
+  "refine_constraint": " The response must contain between 10 and 30 words to ensure clarity and conciseness, and it must be formatted as a valid JSON object with proper key-value pairs, commas, colons, and quotation marks to ensure it can be parsed without errors. The agent must execute at most 2 tool calls in total across all interaction turns to complete the task. The task must be completed within at most 2 interaction turns.",
+  "constraint": [
+    "Response",
+    "Length",
+    "The response must contain between 10 and 30 words to ensure clarity and conciseness."
+  ]
+}

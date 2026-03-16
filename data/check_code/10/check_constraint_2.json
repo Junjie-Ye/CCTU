@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 3,
+  "refine_constraint": " You must answer by calling the provided tools. The total number of tool calls across all interaction turns must not exceed 3. The final answer must be formatted as a valid JSON object with a key \"location\" specifying the country where the event occurred.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

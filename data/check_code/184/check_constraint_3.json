@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 300,
+  "max_responseLength": 500,
+  "unit": "characters",
+  "refine_constraint": " If the agent invokes `literary_verse_finder`, it is strictly required to also utilize `event_city_identifier` simultaneously. Furthermore, the `park_feature_locator` tool can only be legitimately invoked if `biographical_data_retriever` has already been executed. All other steps must follow logically and adhere to the constraint that all information must be obtained via tool calls, with the agent correcting any errors and retrying until a valid solution is reached. Additionally, the final response must include the keyword \"Delimiting Identifier: [Comparison Result]\" to clearly separate the final answer from the reasoning. The final response must be between 300 and 500 characters in length, measured in characters, to ensure clarity and completeness without unnecessary verbosity. The final answer must end with an exclamation mark (!) to emphasize the conclusion.",
+  "constraint": [
+    "Response",
+    "Length",
+    "The final response must be between 300 and 500 characters in length, measured in characters, to ensure clarity and completeness without unnecessary verbosity."
+  ]
+}

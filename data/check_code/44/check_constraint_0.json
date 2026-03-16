@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 0,
+  "max_callTimes": 2,
+  "refine_constraint": " You must use the provided tools to find the answer. The agent must not call tools more than twice. The final response must end with a period and must not include any exclamation marks.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "At most 2"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "order_constraints": [
+    [
+      "cultural_heritage_locator",
+      "mountain_peak_identifier"
+    ]
+  ],
+  "refine_constraint": " The final answer must be formatted in Markdown syntax, including the use of headings, bold/italic text, and clear numerical comparisons to enhance readability and clarity. Additionally, the response must conclude with the exact phrase \"**Answer:** (a) is more than (b)\" or \"**Answer:** (b) is more than (a)\", depending on the result. The response must not include any periods. If the agent uses the `cultural_heritage_locator` tool, the `mountain_peak_identifier` tool must be called afterwards. In at least one interaction turn, the agent must invoke at least 2 unique tool types in parallel.",
+  "constraint": [
+    "Tool",
+    "Tool Order",
+    "If you use the `cultural_heritage_locator`, ensure `mountain_peak_identifier` is called afterwards."
+  ]
+}

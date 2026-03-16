@@ -1,0 +1,14 @@
+{
+  "order_constraints": [
+    [
+      "restaurant_locator",
+      "chef_dish_associator"
+    ]
+  ],
+  "refine_constraint": " If the agent intends to use the `chef_dish_associator` tool, it is strictly required to first call the `restaurant_locator` If the agent invokes both island_feature_locator and restaurant_locator, these tools must be executed simultaneously in a single action step. The total number of tool calls the agent can execute across all interaction turns must not exceed 15. At least two distinct tools must be invoked in at least one interaction turn. The response must end with a period to ensure proper sentence closure and also end with the phrase \"Tourist comparison completed.\"",
+  "constraint": [
+    "Tool",
+    "Tool Order",
+    "If the agent intends to use the `chef_dish_associator` tool, it is strictly required to first call the `restaurant_locator` to establish the specific dining establishment context."
+  ]
+}

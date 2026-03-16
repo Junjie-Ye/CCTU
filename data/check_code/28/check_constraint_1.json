@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 0,
+  "max_responseLength": 10,
+  "unit": "words",
+  "refine_constraint": " The AI Agent must complete at least 2 interaction turns before providing a final answer. The final answer must be at most 10 words in length to ensure conciseness. Additionally, the final answer must be structured as a valid JSON object with the company name as the only key-value pair.",
+  "constraint": [
+    "Response",
+    "Length",
+    "The final answer must be at most 10 words in length to ensure conciseness."
+  ]
+}

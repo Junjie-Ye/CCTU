@@ -1,0 +1,12 @@
+{
+  "max_calls_per_tool": {
+    "average_altitude_calculator": 1,
+    "historical_event_locator": 1
+  },
+  "refine_constraint": " If the agent intends to invoke the average_altitude_calculator tool, the historical_event_locator tool must be executed beforehand. Each tool must be called at most once. The final answer must be between 10 and 50 words in length, and the agent's response must begin with the identifier \"Answer Start: \" to indicate the start of the final answer.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "Each tool can be called at most once."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " You must obtain all information through tool calls, retrying with corrected parameters if errors occur. Additionally, you may use each unique tool type (e.g., `historical_event_locator` or `highest_mountain_finder`) at most twice during the task. Your final answer must be formatted using Markdown syntax with proper use of bold text for key terms and a dedicated \"Final Answer\" heading. Furthermore, the response must conclude with the exact phrase \"Final Answer: **[the identified mountain]**\" followed by a new line.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

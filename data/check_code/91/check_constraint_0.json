@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 0,
+  "max_responseLength": 200,
+  "unit": "characters",
+  "refine_constraint": " The final response must be at most 200 characters long to ensure conciseness and focus.",
+  "constraint": [
+    "Response",
+    "Length",
+    "The final response must be at most 200 characters long to ensure conciseness and focus."
+  ]
+}

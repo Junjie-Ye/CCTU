@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 2,
+  "max_callTimes": 4,
+  "refine_constraint": " Your solution must involve between 2 to 4 total tool calls to achieve the result, must not exceed 3 total interaction turns, and must ensure each tool is called at most once.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "Range (2-4)"
+  ]
+}

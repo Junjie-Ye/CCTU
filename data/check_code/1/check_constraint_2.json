@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " The answer must be formatted as a valid JSON object containing a \"successor\" key with the full name of the successor as its value. The agent must use the `political_successor_finder` tool no more than one time to determine this information.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

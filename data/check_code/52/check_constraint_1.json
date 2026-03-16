@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 50,
+  "max_responseLength": 100,
+  "unit": "words",
+  "refine_constraint": " The response must start with the phrase \"The main crop is\", must be between 50 and 100 words in length, the total number of interaction turns must fall within a range of 3 to 6 (inclusive), the agent can make at most 5 tool calls in total to answer the question. If the agent invokes the agricultural_data_analyzer tool, it must first call the earthquake_event_locator tool.The earthquake_event_locator can be called at most 1 time, and the agricultural_data_analyzer can be called at most 1 time.",
+  "constraint": [
+    "Response",
+    "Length",
+    "The response must be between 50 and 100 words in length."
+  ]
+}

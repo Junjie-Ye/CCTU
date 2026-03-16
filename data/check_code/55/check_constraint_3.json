@@ -1,0 +1,14 @@
+{
+  "order_constraints": [
+    [
+      "historical_figure_locator",
+      "local_culture_explorer"
+    ]
+  ],
+  "refine_constraint": " Your answer must be presented in a **tabular format**, clearly summarizing the chain of information retrieval steps and the final result. Additionally, the response must include the delimiter \"###\" to separate the information retrieval steps from the final result in the tabular format. The solution must use between 5 and 7 tool calls to complete the task. The `local_culture_explorer` tool can only be invoked if the `historical_figure_locator` has already been executed within the trajectory.",
+  "constraint": [
+    "Tool",
+    "Tool Order",
+    "The `local_culture_explorer` tool can only be invoked if the `historical_figure_locator` has already been executed within the trajectory."
+  ]
+}

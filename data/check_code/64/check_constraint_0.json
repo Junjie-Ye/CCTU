@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 200,
+  "max_responseLength": "inf",
+  "unit": "characters",
+  "refine_constraint": " Your answer must be at least 200 characters long to ensure it includes a detailed explanation of the reasoning process and the sequence of tool calls used to arrive at the conclusion. Additionally, the solution must not require more than 10 tool calls in total to ensure efficiency and prevent unnecessary complexity. Furthermore, each unique tool may be called at most 2 times to ensure a balanced use of available functions and prevent overreliance on any single tool.",
+  "constraint": [
+    "Response",
+    "Length",
+    "At least 200 characters to ensure the answer includes a detailed explanation of the reasoning process and tool calls used to arrive at the conclusion."
+  ]
+}

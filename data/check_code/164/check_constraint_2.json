@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "philosopher_concept_identifier": 1
+  },
+  "refine_constraint": " The answer must end with a period (.) to ensure proper sentence closure. If the agent chooses to use these tools, philosopher_concept_identifier must precede historical_figure_info. Philosopher_concept_identifier tool must be invoked at most once during the process.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Tool, Max Calls Per Tool, \"philosopher_concept_identifier: At most 1\")"
+  ]
+}

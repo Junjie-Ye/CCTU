@@ -1,0 +1,18 @@
+{
+  "max_calls_per_tool": {
+    "historical_fact_retriever": 1,
+    "price_estimator": 1,
+    "anatomy_information_provider": 1,
+    "factual_information_retriever": 1,
+    "election_results_retriever": 1,
+    "geographical_area_calculator": 1,
+    "element_discovery_tool": 1,
+    "global_language_statistics_v2": 1
+  },
+  "refine_constraint": " You must obtain the answer by calling the provided tools, ensuring that no single tool is used more than once in the process, at most two unique tool type is invoked simultaneously in any interaction turn, and the total number of interaction turns must be between 2 and 3 (inclusive).",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Tool, Max Calls Per Tool, Each tool can be called at most once in the solution process)"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "max_calls_per_tool": {
+    "century_date_calculator": 2,
+    "historical_event_finder": 2,
+    "historical_event_data_retriever": 2,
+    "historical_event_retriever": 2,
+    "climate_forecaster": 2,
+    "merged_historical_event_tool": 2,
+    "opera_performance_tracker": 2
+  },
+  "refine_constraint": " You must use the available tools to find the answer, and your solution must involve between 2 and 5 interaction turns, inclusive. Additionally, you are limited to at most 2 calls per unique tool type for this task. Your final answer must use the delimiter \"###\" to clearly separate the two results in the response.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "The agent is limited to at most 2 calls per unique tool type for this task."
+  ]
+}

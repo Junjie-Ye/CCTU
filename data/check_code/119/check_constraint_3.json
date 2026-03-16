@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "fuel_price_checker": 2
+  },
+  "refine_constraint": " The answer must end with a period to ensure proper sentence closure and must not contain any exclamation marks or question marks to maintain a formal tone. Additionally, if the agent intends to retrieve the required information, it must include at least one interaction turn where two different tool types are invoked simultaneously. The agent must execute a minimum of three distinct tool calls across all interaction turns to thoroughly investigate the price data. The answer must be at most 200 characters in length to ensure conciseness. Finally, the answer must be organized in a tabular format with headers for 'Date' and 'Price', and two rows for today and tomorrow's prices to clearly present the comparison.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Tool, Max Calls Per Tool, The fuel_price_checker tool may be used at most 2 times during the solution process)"
+  ]
+}

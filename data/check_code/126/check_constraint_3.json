@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " You must obtain all information by calling the provided tools and not by answering the question directly. If a tool call fails, you must analyze the error, correct its parameters, and retry until success. Additionally, you must invoke between 1 and 2 unique tool types simultaneously in at least one interaction turn, but must not invoke more than 2 unique tool types simultaneously in any turn. The total number of tool calls must be between 2 and 3 (inclusive). Your final response must end with the phrase 'Based on historical records.' to indicate the source of the information.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 200,
+  "max_responseLength": 300,
+  "unit": "characters",
+  "refine_constraint": " The final answer must be presented in a tabular format with at least three columns: the name of the feature, its depth, and the difference from the average depth of the Pacific Ocean. The table must include a header row and align the data vertically for clarity. The entire response must be between 200 and 300 characters in length to ensure clarity and conciseness while including the required tabular format. The final response must end with a period to ensure proper sentence closure. If the agent chooses to use the `factual_data_retriever` or `ocean_depth_analyzer` tools, their total invocation count must not exceed two per tool.",
+  "constraint": [
+    "Response",
+    "Length",
+    "The entire response must be between 200 and 300 characters in length to ensure clarity and conciseness while including the required tabular format."
+  ]
+}

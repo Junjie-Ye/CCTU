@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " Your response must include the final numerical answer enclosed within a LaTeX-style box using the format $\\boxed{X}$, where X is the calculated value in million, must be between 10 and 50 words in length to ensure conciseness while providing necessary details, must end with a period to ensure proper sentence closure, and must be structured as a valid JSON object with key-value pairs, correct use of commas, colons, and quotation marks, and must be successfully parseable without errors.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

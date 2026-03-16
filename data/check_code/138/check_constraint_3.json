@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " Your response must include bullet points or similar formatting to clearly separate the elevation information for each volcano, must end with a period to ensure proper sentence closure, and must present the elevation data in a tabular format with two columns: 'Volcano Name' and 'Elevation (meters)'.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

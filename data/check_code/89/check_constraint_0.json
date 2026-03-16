@@ -1,0 +1,14 @@
+{
+  "order_constraints": [
+    [
+      "supplier_hospital_locator",
+      "hospital_survival_rate_analyzer"
+    ]
+  ],
+  "refine_constraint": " If the agent invoke 'supplier_hospital_locator' tool, it must call it before the 'hospital_survival_rate_analyzer' tool. The total number of tool calls must be between 5 and 8, inclusive. The final answer must be formatted using Markdown syntax, including proper headings, lists, bold/italic text, and code blocks to enhance readability and structure. Additionally, the final answer must end with a period to ensure proper sentence closure.",
+  "constraint": [
+    "Tool",
+    "Tool Order",
+    "(Main Category, Tool Order, \"The tool 'supplier_hospital_locator' must be called before 'hospital_survival_rate_analyzer'.\")"
+  ]
+}

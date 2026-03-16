@@ -1,0 +1,38 @@
+{
+  "order_constraints": [
+    [
+      "academic_founder_identifier",
+      "academic_institution_locator"
+    ],
+    [
+      "academic_institution_locator",
+      "institution_location_finder"
+    ],
+    [
+      "institution_location_finder",
+      "river_locator"
+    ],
+    [
+      "river_locator",
+      "river_source_locator"
+    ],
+    [
+      "river_source_locator",
+      "geographer_identifier"
+    ],
+    [
+      "geographer_identifier",
+      "biographical_info_retriever"
+    ],
+    [
+      "biographical_info_retriever",
+      "cultural_artifact_identifier"
+    ]
+  ],
+  "refine_constraint": " You must use tool calls to answer this question, and you can make at most 10 tool calls. The final answer must include a statement regarding the traditional headwear of the identified country. If the agent intends to invoke the `cultural_artifact_identifier`, the `biographical_info_retriever` must strictly be executed beforehand. If the agent intends to invoke the `biographical_info_retriever`, the `geographer_identifier` must strictly be executed beforehand. If the agent intends to invoke the `geographer_identifier`, the `river_source_locator` must strictly be executed beforehand. If the agent intends to invoke the `river_source_locator`, the `river_locator` must strictly be executed beforehand. If the agent intends to invoke the `river_locator`, the `institution_location_finder` must strictly be executed beforehand. If the agent intends to invoke the `institution_location_finder`, the `academic_institution_locator` must strictly be executed beforehand. If the agent intends to invoke the `academic_institution_locator`, the `academic_founder_identifier` must strictly be executed beforehand.",
+  "constraint": [
+    "Tool",
+    "Tool Order",
+    "The agent must call the `academic_founder_identifier` before calling the `academic_institution_locator`, and must call the `academic_institution_locator` before calling the `institution_location_finder`, and must call the `institution_location_finder` before calling the `river_locator`, and must call the `river_locator` before calling the `river_source_locator`, and must call the `river_source_locator` before calling the `geographer_identifier`, and must call the `geographer_identifier` before calling the `biographical_info_retriever`, and must call the `biographical_info_retriever` before calling the `cultural_artifact_identifier`."
+  ]
+}

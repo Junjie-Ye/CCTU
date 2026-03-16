@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 30,
+  "max_responseLength": 50,
+  "unit": "words",
+  "refine_constraint": " You must solve this within **at most 10 interaction rounds** to ensure efficiency. Your answer must be formatted using **Markdown syntax**, including appropriate use of headings, bold/italic text, and line breaks to enhance clarity and structure. Additionally, ensure that the name of the first female president is clearly highlighted in a **bolded** section using Markdown to emphasize the key information in your response. The final answer must be between **30 and 50 words** in length to ensure sufficient detail and conciseness.",
+  "constraint": [
+    "Response",
+    "Length",
+    "The final answer must be between 30 and 50 words in length to ensure sufficient detail and conciseness."
+  ]
+}

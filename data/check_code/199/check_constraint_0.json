@@ -1,0 +1,10 @@
+{
+  "min_round": 8,
+  "max_round": 12,
+  "refine_constraint": " You must complete this task using between 8 and 12 interaction turns, inclusive. If the agent intends to invoke multiple tools, cultural_heritage_locator and nearby_reserve_locator must be called in the same step.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "Range (The total number of interaction turns must fall within 8 and 12, inclusive.)"
+  ]
+}

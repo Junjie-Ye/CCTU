@@ -1,0 +1,11 @@
+{
+  "min_responseLength": 0,
+  "max_responseLength": 200,
+  "unit": "characters",
+  "refine_constraint": "Rank these values from greatest to least: (a) the volume of water in cubic meters in the waterfall near the location of the writer who crafted the acclaimed novel set in Japan, (b) the number of languages spoken by the diplomat who opened trade routes, and (c) the length of the historic road in kilometers, paved by the emperor leading a major dynasty. If the agent intends to invoke the `historical_road_length_calculator`, the `historical_leader_infrastructure_finder` must strictly be executed beforehand. You may call the `literary_search_tool` at most 2 times. Your final answer must be formatted as a valid JSON object, including a JSON key-value structure for each ranked item, with the keys 'a', 'b', and 'c' corresponding to the three values. The JSON must be syntactically valid and should be enclosed in curly braces. Your final answer must also end with a period to ensure proper sentence closure and must not exceed 200 characters in length.",
+  "constraint": [
+    "Response",
+    "Length",
+    "At most 200 characters"
+  ]
+}

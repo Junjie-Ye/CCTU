@@ -1,0 +1,10 @@
+{
+  "min_callTimes": 0,
+  "max_callTimes": 4,
+  "refine_constraint": " If the agent intends to invoke the `neighborhood_identifier`, the `event_location_finder` must strictly be executed beforehand. If the agent intends to invoke the `population_density_calculator`, the `neighborhood_identifier` must strictly be executed beforehand. Each tool can be called at most once. The interaction must be completed in at most 5 rounds, and the total number of tool calls across all rounds must not exceed 4.",
+  "constraint": [
+    "Interact",
+    "Call Times",
+    "At most 4 tool calls in total across all rounds"
+  ]
+}

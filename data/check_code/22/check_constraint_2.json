@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 3,
+  "refine_constraint": " Your answer must be derived by making between 1 and 2 total tool calls using the available tools. Ensure you only use the tools provided and do not rely on internal knowledge. The total number of interaction turns (including tool calls and responses) must not exceed 3. The final response must be formatted using Markdown syntax to enhance readability and structure, and must end with a period to ensure proper sentence closure.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most (3)"
+  ]
+}

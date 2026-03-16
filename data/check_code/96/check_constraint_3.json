@@ -1,0 +1,19 @@
+{
+  "max_calls_per_tool": {
+    "urban_area_identifier": 2,
+    "business_locator": 2,
+    "university_program_finder": 2,
+    "cultural_heritage_folk_tale_finder": 2,
+    "corporate_housing_locator": 2,
+    "biographical_info_retriever": 2,
+    "business_district_locator": 2,
+    "consulting_client_finder": 2,
+    "rental_price_analyzer": 2
+  },
+  "refine_constraint": " You must complete this task within at most 8 interaction turns with the provided tools, and your final answer must be concise, containing at most 150 words. If the agent initiates the analysis using `urban_area_identifier`, it is strictly required to proceed with the following sequence of tool calls: `business_district_locator` -> `business_locator` -> `consulting_client_finder` -> `corporate_housing_locator` -> `rental_price_analyzer`. Furthermore, you must not invoke any single tool more than 2 times during the task. The final answer must be presented in a tabular format, with at least two columns and two rows, clearly separating the key components of the answer (e.g., \"Step\" and \"Result\").",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "The agent must not invoke any single tool more than 2 times during the task."
+  ]
+}

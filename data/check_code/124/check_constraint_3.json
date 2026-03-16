@@ -1,0 +1,11 @@
+{
+  "min_parallelCallTypes": 2,
+  "max_parallelCallTypes": "inf",
+  "unit": "type",
+  "refine_constraint": " The answer must be concise, contain at most 10 words, be structured as a valid JSON object with a single key-value pair, where the key is \"days\" and the value is an integer indicating the number of days. Additionally, during the solution process, there must be at least one interaction turn in which the agent invokes at least two unique tool types simultaneously. The response must end with a period to ensure proper sentence closure.",
+  "constraint": [
+    "Interact",
+    "Parallel Calls",
+    "(\"Interact\", \"Parallel Calls\", \"At least 2\")"
+  ]
+}

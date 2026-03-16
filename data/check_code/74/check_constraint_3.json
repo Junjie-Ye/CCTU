@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " Your solution must use between 7 and 11 tool calls to ensure sufficient information retrieval while preventing excessive execution, each tool can be called at most 2 times during the task, and the response must conclude with the identifier \"END OF ANSWER\"",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

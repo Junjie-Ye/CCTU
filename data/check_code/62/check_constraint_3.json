@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 3,
+  "refine_constraint": " Your answer must be concise and not exceed 150 characters. Additionally, your final response must be structured as a valid JSON object, including key-value pairs and adhering to proper syntax rules to ensure it can be successfully parsed without errors. You are allowed a maximum of 3 interaction turns to retrieve the required information. The final response must end with a period to ensure proper sentence closure. If the tools successfully retrieve the target result, the final answer must identify this result by prefixing it with the label 'Life Expectancy: '",
+  "constraint": [
+    "Interact",
+    "Round",
+    "The total number of interaction turns the agent is allowed to take must be at most 3."
+  ]
+}

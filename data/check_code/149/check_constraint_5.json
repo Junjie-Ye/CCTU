@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 20,
+  "refine_constraint": " Your response must be fully formatted using Markdown syntax (including proper use of bold/italic text, lists, or other elements), must conclude with the exact phrase \"Final Answer:\" followed by your comparison result in bold specifying both scores numerically and the relationship between them, must end with a period after the **Final Answer:** declaration, must ensure that no single interaction turn contains more than one unique tool type being invoked simultaneously, and must limit the academic_score_retriever tool to no more than 2 calls in total during the solution process.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 20 including final answer"
+  ]
+}

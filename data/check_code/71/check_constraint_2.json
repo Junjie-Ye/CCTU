@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 8,
+  "refine_constraint": " If you initiates the task with `countryside_distillery_locator`, it is strictly required to proceed with the following sequence: `business_locator` -> `distillery_spirit_identifier` -> `bartender_matcher` -> `individual_location_finder` -> `local_specialty_finder`. The solution must complete within at most 8 interaction turns, the `distillery_spirit_identifier` tool must not be called more than 3 times, and your final answer must end with a period.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 8 interaction turns"
+  ]
+}

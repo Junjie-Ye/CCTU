@@ -1,0 +1,10 @@
+{
+  "min_round": 0,
+  "max_round": 3,
+  "refine_constraint": " Your solution must involve between 2 to 4 total tool calls to achieve the result, must not exceed 3 total interaction turns, and must ensure each tool is called at most once.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "At most 3"
+  ]
+}

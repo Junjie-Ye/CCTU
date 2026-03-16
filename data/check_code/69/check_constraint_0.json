@@ -1,0 +1,10 @@
+{
+  "min_round": 5,
+  "max_round": "inf",
+  "refine_constraint": " You must use at least 5 interaction turns. If the agent intends to invoke the specified tools, the execution must follow the exact sequence: business_magnate_identifier, historical_company_finder, company_device_inquiry, tech_phenomenon_mapper_v2, scientific_discovery_lookup, historical_figure_locator, regional_cuisine_identifier. Your final answer must be formatted using Markdown syntax with appropriate headings and bullet points, concluding with the phrase \"Final Answer: [target dessert]\" where [target dessert] is replaced with the identified dessert.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "(Main Category, Round, At least 5 interaction turns)"
+  ]
+}

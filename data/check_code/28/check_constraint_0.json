@@ -1,0 +1,10 @@
+{
+  "min_round": 2,
+  "max_round": "inf",
+  "refine_constraint": " The AI Agent must complete at least 2 interaction turns before providing a final answer. The final answer must be at most 10 words in length to ensure conciseness. Additionally, the final answer must be structured as a valid JSON object with the company name as the only key-value pair.",
+  "constraint": [
+    "Interact",
+    "Round",
+    "Interact, Round, At least 2 interaction turns must be completed before the agent can provide a final answer."
+  ]
+}

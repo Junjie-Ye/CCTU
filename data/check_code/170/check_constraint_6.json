@@ -1,0 +1,11 @@
+{
+  "max_calls_per_tool": {
+    "advanced_calculator": 1
+  },
+  "refine_constraint": " The agent must invoke between 1 and 4 unique tool types simultaneously in any single interaction turn. The minimum of 1 must be achieved in at least one turn, and the maximum of 4 must not be exceeded in any turn. The total number of interaction turns must fall within a range of 8 to 10. The agent is allowed to invoke the advanced_calculator function at most 1 time during the solution process. The response must include the keywords \"Step X:\" for each major action or reasoning step, where X is a sequential number, to clearly delineate the logical progression of the solution. The final answer must be concise and not exceed 100 characters and must end with a period to ensure proper sentence closure. Additionally, the final answer must be presented in a tabular format that clearly shows the calculated difference between the flight distance and the train distance, with appropriate column headers and aligned data. The table must include the two distances and the difference as distinct rows or columns for clarity. Furthermore, the `river_origin_locator` must be invoked before the `explorer_identifier`, and the `cultural_landmark_identifier` must be invoked before the `financial_hub_identifier`.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Tool, Max Calls Per Tool, The agent is allowed to invoke the advanced_calculator function at most 1 time during the solution process.)"
+  ]
+}

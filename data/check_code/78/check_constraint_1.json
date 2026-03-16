@@ -1,0 +1,17 @@
+{
+  "max_calls_per_tool": {
+    "cultural_insight_provider": 1,
+    "ingredient_identifier": 1,
+    "scientific_discovery_finder": 1,
+    "product_information_retriever": 1,
+    "sports_sponsorship_finder": 1,
+    "gene_trait_identifier": 1,
+    "biographical_info_finder": 1
+  },
+  "refine_constraint": " You must solve this using at most 10 tool calls in total. Each step must be solved using the appropriate tool, the answer must be derived entirely from the output of these tools, and each of the following tools may be used at most once: cultural_insight_provider, ingredient_identifier, scientific_discovery_finder, product_information_retriever, sports_sponsorship_finder, gene_trait_identifier, biographical_info_finder.",
+  "constraint": [
+    "Tool",
+    "Max Calls Per Tool",
+    "(Tool, Max Calls Per Tool, At most 1 for each of the following tools: cultural_insight_provider, ingredient_identifier, scientific_discovery_finder, product_information_retriever, sports_sponsorship_finder, gene_trait_identifier, biographical_info_finder)"
+  ]
+}

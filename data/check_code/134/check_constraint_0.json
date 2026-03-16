@@ -1,0 +1,11 @@
+{
+  "min_parallelCallTypes": 1,
+  "max_parallelCallTypes": 2,
+  "unit": "type",
+  "refine_constraint": " You must ensure that during the problem-solving process: 1) The number of unique tool types invoked simultaneously in any single interaction turn is between 1 and 2 (inclusive); 2) At least one interaction turn must include exactly 1 unique tool type; 3) No turn may exceed 2 unique tool types; 4) The total number of interaction turns must not exceed 3; 5) The final response must conclude with the phrase \"Days: [number]\" where [number] is the calculated difference in days; 6) The response must not include any punctuation marks after the \"Days: [number]\" phrase; and 7) The agent may invoke the `historical_event_finder` tool at most 2 times during the entire problem-solving process.",
+  "constraint": [
+    "Interact",
+    "Parallel Calls",
+    "(Main Category, Interact, The number of simultaneous unique tool types must be within the range of 1 to 2)"
+  ]
+}
