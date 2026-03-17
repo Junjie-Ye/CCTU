@@ -22,8 +22,8 @@ Solving problems through tool use under explicit constraints constitutes a highl
 
 ## What's New
 
-- **[2026/03/17]** Release the [data](https://huggingface.co/datasets/Junjie-Ye/CCTU/) and code for SceIF.
-- **[2026/03/17]** Paper available on [Arxiv](https://arxiv.org/abs/xxxx.xxxxx).
+- **[2026/03/17]** Release the [data](https://huggingface.co/datasets/Junjie-Ye/CCTU/) and code for CCTU.
+- **[2026/03/17]** Paper available on [Arxiv](https://arxiv.org/abs/2603.15309).
 
 ## Leaderboard
 
