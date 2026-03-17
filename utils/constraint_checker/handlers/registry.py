@@ -23,16 +23,16 @@ from .response import ResponseLengthHandler, ResponseFormatHandler, ResponsePunc
 
 
 HANDLER_REGISTRY: Dict[ConstraintKey, Type[BaseHandler]] = {
-    ("interact", "round"): RoundHandler,
-    ("interact", "call times"): CallTimesHandler,
-    ("interact", "parallel calls"): ParallelCallsHandler,
+    ("resource", "interaction rounds"): RoundHandler,
+    ("resource", "tool call count"): CallTimesHandler,
+    ("behavior", "parallel calls count"): ParallelCallsHandler,
 
-    ("tool", "max calls per tool"): MaxCallsPerToolHandler,
-    ("tool", "tool order"): ToolOrderHandler,
-    ("tool", "tool parallel"): ToolParallelHandler,
+    ("resource", "specific tool call count"): MaxCallsPerToolHandler,
+    ("behavior", "sequential dependencies"): ToolOrderHandler,
+    ("behavior", "parallel dependencies"): ToolParallelHandler,
 
     ("response", "length"): ResponseLengthHandler,
     ("response", "format"): ResponseFormatHandler,
-    ("response", "punctuation"): ResponsePunctuationHandler,
-    ("response", "identifiers"): ResponseIdentifiersHandler,
+    ("response", "content_2"): ResponsePunctuationHandler,
+    ("response", "content_1"): ResponseIdentifiersHandler,
 }
