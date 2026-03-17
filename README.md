@@ -13,7 +13,7 @@ Mar. 17, 2026
 
 <div>
 <center>
-<img src=asset/ctu.png>
+<img src=assets/ctu.png>
 </div>
 
 <div style="text-align: justify;">
